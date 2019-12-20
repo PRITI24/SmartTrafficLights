@@ -2,6 +2,7 @@
 #define MAINWINDOW_HPP
 
 #include <QMainWindow>
+#include <tests.hpp>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
