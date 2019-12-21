@@ -16,11 +16,24 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    fuzzycontroller.cpp \
+    fuzzyinput.cpp \
+    fuzzyinputvariable.cpp \
+    fuzzyoutput.cpp \
+    fuzzyoutputvariable.cpp \
+    fuzzyrule.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
-    mainwindow.hpp
+    fuzzycontroller.hpp \
+    fuzzyinput.hpp \
+    fuzzyinputvariable.hpp \
+    fuzzyoutput.hpp \
+    fuzzyoutputvariable.hpp \
+    fuzzyrule.hpp \
+    mainwindow.hpp \
+    tests.hpp
 
 FORMS += \
     mainwindow.ui
