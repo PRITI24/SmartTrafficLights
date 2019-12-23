@@ -1,4 +1,4 @@
-#include "semaphore.h"
+#include "semaphore.hpp"
 
 Semaphore::Semaphore()
 {

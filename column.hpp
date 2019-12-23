@@ -3,10 +3,10 @@
 
 #include <QObject>
 #include <QVector>
-#include <placeholder.h>
-#include <semaphore.h>
+#include <placeholder.hpp>
+#include <semaphore.hpp>
 
-class Column
+class Column : public QObject
 {
     Q_OBJECT
 public:

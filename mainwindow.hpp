@@ -17,6 +17,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+public slots:
+    void crossroadI();
+    void crossroadTa();
+    void crossroadTb();
+    void crossroadTc();
+    void crossroadXa();
+    void crossroadXb();
+
 private:
     Ui::MainWindow *ui;
 };

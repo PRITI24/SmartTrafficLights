@@ -6,15 +6,143 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>603</width>
+    <height>459</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>SmartTrafficLights</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitterCentral">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QLabel" name="selectLabel">
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>Select crossroad type :</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="">
+       <layout class="QGridLayout" name="crossroadGrid">
+        <item row="0" column="0">
+         <widget class="QLabelClickable" name="crossroadI">
+          <property name="minimumSize">
+           <size>
+            <width>146</width>
+            <height>155</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/images/images/mainwindow/crossroadI.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabelClickable" name="crossroadTa">
+          <property name="minimumSize">
+           <size>
+            <width>145</width>
+            <height>155</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/images/images/mainwindow/crossroadTa.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabelClickable" name="crossroadTb">
+          <property name="minimumSize">
+           <size>
+            <width>146</width>
+            <height>155</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/images/images/mainwindow/crossroadTb.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabelClickable" name="crossroadTc">
+          <property name="minimumSize">
+           <size>
+            <width>146</width>
+            <height>154</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/images/images/mainwindow/crossroadTc.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabelClickable" name="crossroadXa">
+          <property name="minimumSize">
+           <size>
+            <width>145</width>
+            <height>154</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/images/images/mainwindow/crossroadXa.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabelClickable" name="crossroadXb">
+          <property name="minimumSize">
+           <size>
+            <width>146</width>
+            <height>154</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/images/images/mainwindow/crossroadXb.png);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QLabelClickable</class>
+   <extends>QLabel</extends>
+   <header>qlabelclickable.hpp</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

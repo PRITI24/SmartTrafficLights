@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/mainwindow/crossroadI.png</file>
+        <file>images/mainwindow/crossroadTa.png</file>
+        <file>images/mainwindow/crossroadTb.png</file>
+        <file>images/mainwindow/crossroadTc.png</file>
+        <file>images/mainwindow/crossroadXa.png</file>
+        <file>images/mainwindow/crossroadXb.png</file>
+    </qresource>
+</RCC>

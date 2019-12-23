@@ -26,9 +26,11 @@ SOURCES += \
     mainwindow.cpp \
     placeholder.cpp \
     column.cpp \
+    qlabelclickable.cpp \
     semaphore.cpp
 
 HEADERS += \
+    column.hpp \
     fuzzycontroller.hpp \
     fuzzyinput.hpp \
     fuzzyinputvariable.hpp \
@@ -36,10 +38,10 @@ HEADERS += \
     fuzzyoutputvariable.hpp \
     fuzzyrule.hpp \
     mainwindow.hpp \
-    tests.hpp \
-    placeholder.h \
-    column.h \
-    semaphore.h
+    placeholder.hpp \
+    qlabelclickable.hpp \
+    semaphore.hpp \
+    tests.hpp
 
 FORMS += \
     mainwindow.ui
@@ -48,3 +50,8 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    MainWindowImages.qrc
+
+DISTFILES +=

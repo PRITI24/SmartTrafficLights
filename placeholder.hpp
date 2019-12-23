@@ -16,14 +16,14 @@ class EmptySpace : public Placeholder
 {
 public:
     void draw();
-    int type();
+    int type() const;
 };
 
 class Car : public Placeholder
 {
 public:
     void draw();
-    int type();
+    int type() const;
 };
 
 #endif // PLACEHOLDER_H

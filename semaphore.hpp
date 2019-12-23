@@ -8,7 +8,7 @@ enum State {
     RED
 };
 
-class Semaphore
+class Semaphore : public QObject
 {
     Q_OBJECT
 public:
