@@ -23,7 +23,10 @@ SOURCES += \
     fuzzyoutputvariable.cpp \
     fuzzyrule.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    placeholder.cpp \
+    column.cpp \
+    semaphore.cpp
 
 HEADERS += \
     fuzzycontroller.hpp \
@@ -33,7 +36,10 @@ HEADERS += \
     fuzzyoutputvariable.hpp \
     fuzzyrule.hpp \
     mainwindow.hpp \
-    tests.hpp
+    tests.hpp \
+    placeholder.h \
+    column.h \
+    semaphore.h
 
 FORMS += \
     mainwindow.ui
