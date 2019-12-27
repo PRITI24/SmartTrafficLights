@@ -1,29 +1,31 @@
 #ifndef SEMAPHORE_H
 #define SEMAPHORE_H
 
-#include <QObject>
+#include <QFrame>
+#include <QDebug>
+#include <QTimer>
 
 enum State {
     GREEN,
     RED
 };
 
-class Semaphore : public QObject
+class Semaphore : public QFrame
 {
     Q_OBJECT
 public:
-    Semaphore();
+    Semaphore(QWidget *parent);
+    void setState(State newState);
 
 public slots:
     void changeState();
     State state();
 
 signals:
-    void greenStart();
+    void changedState(State s);
 
 private:
     State m_state;
-
 };
 
 #endif // SEMAPHORE_H

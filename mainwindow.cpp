@@ -22,7 +22,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::crossroadI()
 {
-    qDebug() << " crossroadI ";
+    m_i = new CrossroadI;
+    m_i->setAttribute(Qt::WA_DeleteOnClose);
+    m_i->show();
 }
 
 void MainWindow::crossroadTa()

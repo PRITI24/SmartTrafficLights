@@ -7,23 +7,19 @@ class Placeholder : public QFrame
 {
     Q_OBJECT
 public:
-    Placeholder();
-    void drow();
-    int type() const;
-};
-
-class EmptySpace : public Placeholder
-{
-public:
+    Placeholder(QWidget *parent);
     void draw();
-    int type() const;
-};
+    int type();
+    void setType(int type);
+    void setupSizePosition(int x, int y, int w, int h);
+    void updatePosition(int x, int y);
 
-class Car : public Placeholder
-{
-public:
-    void draw();
-    int type() const;
+private:
+    int m_type = 0;
+    int m_X;
+    int m_Y;
+    int m_Width;
+    int m_Height;
 };
 
 #endif // PLACEHOLDER_H

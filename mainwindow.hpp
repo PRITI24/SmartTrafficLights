@@ -2,6 +2,7 @@
 #define MAINWINDOW_HPP
 
 #include <tests.hpp>
+#include <crossroadi.hpp>
 
 #include <QMainWindow>
 
@@ -27,5 +28,7 @@ public slots:
 
 private:
     Ui::MainWindow *ui;
+
+    CrossroadI *m_i = nullptr;
 };
 #endif // MAINWINDOW_HPP

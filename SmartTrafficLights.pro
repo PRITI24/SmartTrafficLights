@@ -16,6 +16,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    crossroadi.cpp \
     fuzzycontroller.cpp \
     fuzzyinput.cpp \
     fuzzyinputvariable.cpp \
@@ -31,6 +32,7 @@ SOURCES += \
 
 HEADERS += \
     column.hpp \
+    crossroadi.hpp \
     fuzzycontroller.hpp \
     fuzzyinput.hpp \
     fuzzyinputvariable.hpp \
@@ -44,6 +46,7 @@ HEADERS += \
     tests.hpp
 
 FORMS += \
+    crossroadi.ui \
     mainwindow.ui
 
 # Default rules for deployment.

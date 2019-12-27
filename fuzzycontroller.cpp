@@ -54,7 +54,7 @@ float FuzzyController::solve()
    float up = 0, down = 0;
 
    for(auto it = output->begin(); it != output->end(); it++) {
-        qDebug() << (*it)->name() << " c: " << (*it)->c() << " mi :" << (*it)->mi();
+        //qDebug() << (*it)->name() << " c: " << (*it)->c() << " mi :" << (*it)->mi();
         up += (*it)->mi() * (*it)->c();
         down += (*it)->mi();
    }
