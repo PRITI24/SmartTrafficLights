@@ -77,7 +77,7 @@ void CrossroadI::s1Timeout()
         float extension2 = fuzzyBrain(_Scolumn2->queueLength(), _Scolumn2->arrivalRate());
         int e = qCeil(double(extension1 + extension2)/2);
         previouslyExtended = true;
-        qDebug() << " SEMAPHORE 1 EXTENDED FOR:" << QString::number(e);
+        //qDebug() << " SEMAPHORE 1 EXTENDED FOR:" << QString::number(e);
         _s1Timer.setInterval(e);
         _s1Timer.start();
         return;
@@ -120,7 +120,7 @@ void CrossroadI::increaseTotalS()
 void CrossroadI::increaseTotalC()
 {
     _totalCarsConv++;
-    ui->totalCarsConv->setText(QString::number(_totalCarsConv/2));
+    ui->totalCarsConv->setText(QString::number(_totalCarsConv));
 }
 
 void CrossroadI::setupSemaphores()
@@ -147,7 +147,7 @@ void CrossroadI::setupColumns()
     _Ccolumn2 = new Column(this, 12, Direction::UP, 620, 580, 100, 20);
     _Ccolumn2->attachSemaphore(ui->_Csemaphore2);
     connect(_Ccolumn1, &Column::increaseTotalCars, this, &CrossroadI::increaseTotalC);
-    connect(_Ccolumn1, &Column::increaseTotalCars, this, &CrossroadI::increaseTotalC);
+    connect(_Ccolumn2, &Column::increaseTotalCars, this, &CrossroadI::increaseTotalC);
 }
 
 void CrossroadI::setupTimeout()
