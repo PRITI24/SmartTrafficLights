@@ -3,6 +3,7 @@
 
 #include <tests.hpp>
 #include <crossroadi.hpp>
+#include <crossroadta.hpp>
 
 #include <QMainWindow>
 
@@ -30,5 +31,6 @@ private:
     Ui::MainWindow *ui;
 
     CrossroadI *m_i = nullptr;
+    CrossroadTa *m_ta = nullptr;
 };
 #endif // MAINWINDOW_HPP

@@ -10,12 +10,18 @@ enum State {
     RED
 };
 
+enum Orientation {
+    UP1,
+    LEFT1
+};
+
 class Semaphore : public QFrame
 {
     Q_OBJECT
 public:
     Semaphore(QWidget *parent);
     void setState(State newState);
+    void setDirection(Orientation newDirection);
 
 public slots:
     void changeState();
@@ -26,6 +32,7 @@ signals:
 
 private:
     State m_state;
+    Orientation m_direction = Orientation::UP1;
 };
 
 #endif // SEMAPHORE_H

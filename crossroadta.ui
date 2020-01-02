@@ -1,0 +1,1756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CrossroadTa</class>
+ <widget class="QWidget" name="CrossroadTa">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>919</width>
+    <height>501</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>919</width>
+    <height>501</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>919</width>
+    <height>501</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Crossroad Ta</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(186, 189, 182);</string>
+  </property>
+  <widget class="Line" name="separationMiddle">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>0</y>
+     <width>10</width>
+     <height>515</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_1">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>49</y>
+     <width>20</width>
+     <height>430</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_5">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>50</y>
+     <width>8</width>
+     <height>145</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_2">
+   <property name="geometry">
+    <rect>
+     <x>222</x>
+     <y>335</y>
+     <width>8</width>
+     <height>145</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_4">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>190</y>
+     <width>221</width>
+     <height>8</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_3">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>330</y>
+     <width>221</width>
+     <height>8</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_7">
+   <property name="geometry">
+    <rect>
+     <x>133</x>
+     <y>345</y>
+     <width>8</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_6">
+   <property name="geometry">
+    <rect>
+     <x>133</x>
+     <y>52</y>
+     <width>8</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_9">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>50</y>
+     <width>8</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_10">
+   <property name="geometry">
+    <rect>
+     <x>178</x>
+     <y>345</y>
+     <width>8</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_8">
+   <property name="geometry">
+    <rect>
+     <x>237</x>
+     <y>260</y>
+     <width>209</width>
+     <height>8</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_11">
+   <property name="geometry">
+    <rect>
+     <x>237</x>
+     <y>224</y>
+     <width>209</width>
+     <height>8</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>4</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Smart semaphore system&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>5</y>
+     <width>201</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Conventional semaphore system&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonC1">
+   <property name="geometry">
+    <rect>
+     <x>62</x>
+     <y>33</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>*</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonC2">
+   <property name="geometry">
+    <rect>
+     <x>106</x>
+     <y>33</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>*</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonC3">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>476</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>*</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonC4">
+   <property name="geometry">
+    <rect>
+     <x>194</x>
+     <y>475</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>*</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonC5">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>204</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>*</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonC6">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>240</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>*</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="startSimulation">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>101</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Start simulation</string>
+   </property>
+  </widget>
+  <widget class="Semaphore" name="semS_1_1">
+   <property name="geometry">
+    <rect>
+     <x>27</x>
+     <y>164</y>
+     <width>16</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="Semaphore" name="semS_1_2">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>328</y>
+     <width>16</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="Semaphore" name="semS_1_3">
+   <property name="geometry">
+    <rect>
+     <x>233</x>
+     <y>340</y>
+     <width>16</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="Semaphore" name="semS_2_1">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>164</y>
+     <width>16</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="Semaphore" name="semS_2_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>170</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="Semaphore" name="semS_3_1">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>269</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_12">
+   <property name="geometry">
+    <rect>
+     <x>697</x>
+     <y>224</y>
+     <width>209</width>
+     <height>8</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Semaphore" name="semC_3_1">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>269</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_13">
+   <property name="geometry">
+    <rect>
+     <x>685</x>
+     <y>190</y>
+     <width>221</width>
+     <height>8</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_14">
+   <property name="geometry">
+    <rect>
+     <x>685</x>
+     <y>330</y>
+     <width>221</width>
+     <height>8</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Semaphore" name="semC_1_3">
+   <property name="geometry">
+    <rect>
+     <x>693</x>
+     <y>340</y>
+     <width>16</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_15">
+   <property name="geometry">
+    <rect>
+     <x>593</x>
+     <y>52</y>
+     <width>8</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Semaphore" name="semC_1_1">
+   <property name="geometry">
+    <rect>
+     <x>483</x>
+     <y>150</y>
+     <width>16</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="Semaphore" name="semC_2_1">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>150</y>
+     <width>16</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_16">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>49</y>
+     <width>8</width>
+     <height>430</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_17">
+   <property name="geometry">
+    <rect>
+     <x>682</x>
+     <y>335</y>
+     <width>8</width>
+     <height>145</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_18">
+   <property name="geometry">
+    <rect>
+     <x>697</x>
+     <y>260</y>
+     <width>209</width>
+     <height>8</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_19">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>50</y>
+     <width>8</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Semaphore" name="semC_1_2">
+   <property name="geometry">
+    <rect>
+     <x>576</x>
+     <y>340</y>
+     <width>16</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_20">
+   <property name="geometry">
+    <rect>
+     <x>638</x>
+     <y>345</y>
+     <width>8</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Semaphore" name="semC_2_2">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>170</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_21">
+   <property name="geometry">
+    <rect>
+     <x>593</x>
+     <y>345</y>
+     <width>8</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_22">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>50</y>
+     <width>8</width>
+     <height>145</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>50</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Car passed:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_11&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;237&lt;/x&gt;
+     &lt;y&gt;224&lt;/y&gt;
+     &lt;width&gt;209&lt;/width&gt;
+     &lt;height&gt;8&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;color: rgb(255, 255, 255);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Horizontal&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Semaphore&quot; name=&quot;semaphoreS_2_3&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;230&lt;/x&gt;
+     &lt;y&gt;269&lt;/y&gt;
+     &lt;width&gt;31&lt;/width&gt;
+     &lt;height&gt;16&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShape&quot;&gt;
+    &lt;enum&gt;QFrame::StyledPanel&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Raised&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_4&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;225&lt;/x&gt;
+     &lt;y&gt;190&lt;/y&gt;
+     &lt;width&gt;221&lt;/width&gt;
+     &lt;height&gt;8&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Horizontal&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_3&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;225&lt;/x&gt;
+     &lt;y&gt;330&lt;/y&gt;
+     &lt;width&gt;221&lt;/width&gt;
+     &lt;height&gt;8&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Horizontal&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Semaphore&quot; name=&quot;semaphoreS_1_3&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;230&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;16&lt;/width&gt;
+     &lt;height&gt;31&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShape&quot;&gt;
+    &lt;enum&gt;QFrame::StyledPanel&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Raised&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_6&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;133&lt;/x&gt;
+     &lt;y&gt;52&lt;/y&gt;
+     &lt;width&gt;8&lt;/width&gt;
+     &lt;height&gt;131&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;/&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;buttonC4&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;193&lt;/x&gt;
+     &lt;y&gt;477&lt;/y&gt;
+     &lt;width&gt;21&lt;/width&gt;
+     &lt;height&gt;16&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;*&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;buttonC2&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;106&lt;/x&gt;
+     &lt;y&gt;33&lt;/y&gt;
+     &lt;width&gt;21&lt;/width&gt;
+     &lt;height&gt;16&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;*&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Semaphore&quot; name=&quot;semaphoreS_1_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;30&lt;/x&gt;
+     &lt;y&gt;150&lt;/y&gt;
+     &lt;width&gt;16&lt;/width&gt;
+     &lt;height&gt;31&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShape&quot;&gt;
+    &lt;enum&gt;QFrame::StyledPanel&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Raised&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Semaphore&quot; name=&quot;semaphoreS_2_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;140&lt;/x&gt;
+     &lt;y&gt;150&lt;/y&gt;
+     &lt;width&gt;16&lt;/width&gt;
+     &lt;height&gt;31&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShape&quot;&gt;
+    &lt;enum&gt;QFrame::StyledPanel&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Raised&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;buttonC1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;62&lt;/x&gt;
+     &lt;y&gt;33&lt;/y&gt;
+     &lt;width&gt;21&lt;/width&gt;
+     &lt;height&gt;16&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;*&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;40&lt;/x&gt;
+     &lt;y&gt;49&lt;/y&gt;
+     &lt;width&gt;20&lt;/width&gt;
+     &lt;height&gt;430&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_2&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;220&lt;/x&gt;
+     &lt;y&gt;335&lt;/y&gt;
+     &lt;width&gt;8&lt;/width&gt;
+     &lt;height&gt;145&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_8&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;237&lt;/x&gt;
+     &lt;y&gt;260&lt;/y&gt;
+     &lt;width&gt;209&lt;/width&gt;
+     &lt;height&gt;8&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Horizontal&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_9&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;90&lt;/x&gt;
+     &lt;y&gt;50&lt;/y&gt;
+     &lt;width&gt;8&lt;/width&gt;
+     &lt;height&gt;131&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;color: rgb(255, 255, 255);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;buttonC5&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;440&lt;/x&gt;
+     &lt;y&gt;204&lt;/y&gt;
+     &lt;width&gt;21&lt;/width&gt;
+     &lt;height&gt;16&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;*&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;buttonC3&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;150&lt;/x&gt;
+     &lt;y&gt;476&lt;/y&gt;
+     &lt;width&gt;21&lt;/width&gt;
+     &lt;height&gt;16&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;*&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Semaphore&quot; name=&quot;semaphoreS_1_2&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;120&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;16&lt;/width&gt;
+     &lt;height&gt;31&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShape&quot;&gt;
+    &lt;enum&gt;QFrame::StyledPanel&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Raised&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;buttonC6&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;440&lt;/x&gt;
+     &lt;y&gt;240&lt;/y&gt;
+     &lt;width&gt;21&lt;/width&gt;
+     &lt;height&gt;16&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;*&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;pushButton&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;5&lt;/x&gt;
+     &lt;y&gt;5&lt;/y&gt;
+     &lt;width&gt;101&lt;/width&gt;
+     &lt;height&gt;24&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;Start simulation&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_10&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;178&lt;/x&gt;
+     &lt;y&gt;345&lt;/y&gt;
+     &lt;width&gt;8&lt;/width&gt;
+     &lt;height&gt;131&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;color: rgb(255, 255, 255);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Semaphore&quot; name=&quot;semaphoreS_2_2&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;230&lt;/x&gt;
+     &lt;y&gt;170&lt;/y&gt;
+     &lt;width&gt;31&lt;/width&gt;
+     &lt;height&gt;16&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShape&quot;&gt;
+    &lt;enum&gt;QFrame::StyledPanel&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Raised&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_7&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;133&lt;/x&gt;
+     &lt;y&gt;345&lt;/y&gt;
+     &lt;width&gt;8&lt;/width&gt;
+     &lt;height&gt;131&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_5&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;220&lt;/x&gt;
+     &lt;y&gt;50&lt;/y&gt;
+     &lt;width&gt;8&lt;/width&gt;
+     &lt;height&gt;145&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;customwidgets&gt;
+  &lt;customwidget&gt;
+   &lt;class&gt;Semaphore&lt;/class&gt;
+   &lt;extends&gt;QFrame&lt;/extends&gt;
+   &lt;header&gt;semaphore.hpp&lt;/header&gt;
+   &lt;container&gt;1&lt;/container&gt;
+  &lt;/customwidget&gt;
+ &lt;/customwidgets&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>50</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Car passed:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_11&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;237&lt;/x&gt;
+     &lt;y&gt;224&lt;/y&gt;
+     &lt;width&gt;209&lt;/width&gt;
+     &lt;height&gt;8&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;color: rgb(255, 255, 255);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Horizontal&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Semaphore&quot; name=&quot;semaphoreS_2_3&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;230&lt;/x&gt;
+     &lt;y&gt;269&lt;/y&gt;
+     &lt;width&gt;31&lt;/width&gt;
+     &lt;height&gt;16&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShape&quot;&gt;
+    &lt;enum&gt;QFrame::StyledPanel&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Raised&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_4&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;225&lt;/x&gt;
+     &lt;y&gt;190&lt;/y&gt;
+     &lt;width&gt;221&lt;/width&gt;
+     &lt;height&gt;8&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Horizontal&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_3&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;225&lt;/x&gt;
+     &lt;y&gt;330&lt;/y&gt;
+     &lt;width&gt;221&lt;/width&gt;
+     &lt;height&gt;8&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Horizontal&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Semaphore&quot; name=&quot;semaphoreS_1_3&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;230&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;16&lt;/width&gt;
+     &lt;height&gt;31&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShape&quot;&gt;
+    &lt;enum&gt;QFrame::StyledPanel&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Raised&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_6&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;133&lt;/x&gt;
+     &lt;y&gt;52&lt;/y&gt;
+     &lt;width&gt;8&lt;/width&gt;
+     &lt;height&gt;131&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;/&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;buttonC4&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;193&lt;/x&gt;
+     &lt;y&gt;477&lt;/y&gt;
+     &lt;width&gt;21&lt;/width&gt;
+     &lt;height&gt;16&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;*&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;buttonC2&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;106&lt;/x&gt;
+     &lt;y&gt;33&lt;/y&gt;
+     &lt;width&gt;21&lt;/width&gt;
+     &lt;height&gt;16&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;*&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Semaphore&quot; name=&quot;semaphoreS_1_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;30&lt;/x&gt;
+     &lt;y&gt;150&lt;/y&gt;
+     &lt;width&gt;16&lt;/width&gt;
+     &lt;height&gt;31&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShape&quot;&gt;
+    &lt;enum&gt;QFrame::StyledPanel&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Raised&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Semaphore&quot; name=&quot;semaphoreS_2_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;140&lt;/x&gt;
+     &lt;y&gt;150&lt;/y&gt;
+     &lt;width&gt;16&lt;/width&gt;
+     &lt;height&gt;31&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShape&quot;&gt;
+    &lt;enum&gt;QFrame::StyledPanel&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Raised&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;buttonC1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;62&lt;/x&gt;
+     &lt;y&gt;33&lt;/y&gt;
+     &lt;width&gt;21&lt;/width&gt;
+     &lt;height&gt;16&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;*&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_1&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;40&lt;/x&gt;
+     &lt;y&gt;49&lt;/y&gt;
+     &lt;width&gt;20&lt;/width&gt;
+     &lt;height&gt;430&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_2&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;220&lt;/x&gt;
+     &lt;y&gt;335&lt;/y&gt;
+     &lt;width&gt;8&lt;/width&gt;
+     &lt;height&gt;145&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_8&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;237&lt;/x&gt;
+     &lt;y&gt;260&lt;/y&gt;
+     &lt;width&gt;209&lt;/width&gt;
+     &lt;height&gt;8&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Horizontal&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_9&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;90&lt;/x&gt;
+     &lt;y&gt;50&lt;/y&gt;
+     &lt;width&gt;8&lt;/width&gt;
+     &lt;height&gt;131&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;color: rgb(255, 255, 255);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;buttonC5&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;440&lt;/x&gt;
+     &lt;y&gt;204&lt;/y&gt;
+     &lt;width&gt;21&lt;/width&gt;
+     &lt;height&gt;16&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;*&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;buttonC3&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;150&lt;/x&gt;
+     &lt;y&gt;476&lt;/y&gt;
+     &lt;width&gt;21&lt;/width&gt;
+     &lt;height&gt;16&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;*&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Semaphore&quot; name=&quot;semaphoreS_1_2&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;120&lt;/x&gt;
+     &lt;y&gt;340&lt;/y&gt;
+     &lt;width&gt;16&lt;/width&gt;
+     &lt;height&gt;31&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShape&quot;&gt;
+    &lt;enum&gt;QFrame::StyledPanel&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Raised&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;buttonC6&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;440&lt;/x&gt;
+     &lt;y&gt;240&lt;/y&gt;
+     &lt;width&gt;21&lt;/width&gt;
+     &lt;height&gt;16&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;*&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QPushButton&quot; name=&quot;pushButton&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;5&lt;/x&gt;
+     &lt;y&gt;5&lt;/y&gt;
+     &lt;width&gt;101&lt;/width&gt;
+     &lt;height&gt;24&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;text&quot;&gt;
+    &lt;string&gt;Start simulation&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_10&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;178&lt;/x&gt;
+     &lt;y&gt;345&lt;/y&gt;
+     &lt;width&gt;8&lt;/width&gt;
+     &lt;height&gt;131&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;color: rgb(255, 255, 255);&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Semaphore&quot; name=&quot;semaphoreS_2_2&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;230&lt;/x&gt;
+     &lt;y&gt;170&lt;/y&gt;
+     &lt;width&gt;31&lt;/width&gt;
+     &lt;height&gt;16&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShape&quot;&gt;
+    &lt;enum&gt;QFrame::StyledPanel&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Raised&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_7&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;133&lt;/x&gt;
+     &lt;y&gt;345&lt;/y&gt;
+     &lt;width&gt;8&lt;/width&gt;
+     &lt;height&gt;131&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;separationLine_5&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;220&lt;/x&gt;
+     &lt;y&gt;50&lt;/y&gt;
+     &lt;width&gt;8&lt;/width&gt;
+     &lt;height&gt;145&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;frameShadow&quot;&gt;
+    &lt;enum&gt;QFrame::Plain&lt;/enum&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;lineWidth&quot;&gt;
+    &lt;number&gt;3&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;customwidgets&gt;
+  &lt;customwidget&gt;
+   &lt;class&gt;Semaphore&lt;/class&gt;
+   &lt;extends&gt;QFrame&lt;/extends&gt;
+   &lt;header&gt;semaphore.hpp&lt;/header&gt;
+   &lt;container&gt;1&lt;/container&gt;
+  &lt;/customwidget&gt;
+ &lt;/customwidgets&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="totalCarsSmart">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>50</y>
+     <width>51</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="totalCarsConv">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>50</y>
+     <width>51</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>separationMiddle</zorder>
+  <zorder>separationLine_1</zorder>
+  <zorder>separationLine_5</zorder>
+  <zorder>separationLine_2</zorder>
+  <zorder>separationLine_4</zorder>
+  <zorder>separationLine_3</zorder>
+  <zorder>separationLine_7</zorder>
+  <zorder>separationLine_6</zorder>
+  <zorder>separationLine_9</zorder>
+  <zorder>separationLine_10</zorder>
+  <zorder>separationLine_8</zorder>
+  <zorder>separationLine_11</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>buttonC1</zorder>
+  <zorder>buttonC2</zorder>
+  <zorder>buttonC3</zorder>
+  <zorder>buttonC4</zorder>
+  <zorder>buttonC5</zorder>
+  <zorder>buttonC6</zorder>
+  <zorder>semS_1_1</zorder>
+  <zorder>semS_1_2</zorder>
+  <zorder>semS_1_3</zorder>
+  <zorder>semS_2_1</zorder>
+  <zorder>semS_2_2</zorder>
+  <zorder>semS_3_1</zorder>
+  <zorder>separationLine_12</zorder>
+  <zorder>semC_3_1</zorder>
+  <zorder>separationLine_13</zorder>
+  <zorder>separationLine_14</zorder>
+  <zorder>semC_1_3</zorder>
+  <zorder>separationLine_15</zorder>
+  <zorder>semC_1_1</zorder>
+  <zorder>semC_2_1</zorder>
+  <zorder>separationLine_16</zorder>
+  <zorder>separationLine_17</zorder>
+  <zorder>separationLine_18</zorder>
+  <zorder>separationLine_19</zorder>
+  <zorder>semC_1_2</zorder>
+  <zorder>separationLine_20</zorder>
+  <zorder>semC_2_2</zorder>
+  <zorder>separationLine_21</zorder>
+  <zorder>separationLine_22</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>totalCarsSmart</zorder>
+  <zorder>totalCarsConv</zorder>
+  <zorder>startSimulation</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Semaphore</class>
+   <extends>QFrame</extends>
+   <header>semaphore.hpp</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

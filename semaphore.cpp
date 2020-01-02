@@ -3,29 +3,56 @@
 Semaphore::Semaphore(QWidget *parent)
 {
     this->setParent(parent);
-
 }
+
 
 void Semaphore::setState(State newState)
 {
     m_state = newState;
-    if(m_state == State::GREEN)
-        this->setStyleSheet("image: url(:/images/images/mainwindow/greenSemaphore.png);");
-    else
-        this->setStyleSheet("image: url(:/images/images/mainwindow/redSemaphore.png);");
+
+    if(m_state == State::GREEN) {
+        switch (m_direction) {
+        case Orientation::UP1 :
+            this->setStyleSheet("image: url(:/images/images/mainwindow/greenSemaphoreUP.png);"); break;
+        case Orientation::LEFT1 :
+            this->setStyleSheet("image: url(:/images/images/mainwindow/greenSemaphoreLEFT.png);"); break;
+        }
+    }
+    else {
+        switch (m_direction) {
+        case Orientation::UP1 :
+            this->setStyleSheet("image: url(:/images/images/mainwindow/redSemaphoreUP.png);"); break;
+        case Orientation::LEFT1 :
+            this->setStyleSheet("image: url(:/images/images/mainwindow/redSemaphoreLEFT.png);"); break;
+        }
+    }
+
+}
+
+void Semaphore::setDirection(Orientation newDirection)
+{
+    m_direction = newDirection;
 }
 
 void Semaphore::changeState()
 {
     if(m_state == State::GREEN) {
         m_state = State::RED;
-        this->setStyleSheet("image: url(:/images/images/mainwindow/redSemaphore.png);");
-        emit changedState(State::RED);
+        switch (m_direction) {
+        case Orientation::UP1 :
+            this->setStyleSheet("image: url(:/images/images/mainwindow/redSemaphoreUP.png);"); break;
+        case Orientation::LEFT1 :
+            this->setStyleSheet("image: url(:/images/images/mainwindow/redSemaphoreLEFT.png);"); break;
+        }
     }
     else {
         m_state = State::GREEN;
-        this->setStyleSheet("image: url(:/images/images/mainwindow/greenSemaphore.png);");
-        emit changedState(State::GREEN);
+        switch (m_direction) {
+        case Orientation::UP1 :
+            this->setStyleSheet("image: url(:/images/images/mainwindow/greenSemaphoreUP.png);"); break;
+        case Orientation::LEFT1 :
+            this->setStyleSheet("image: url(:/images/images/mainwindow/greenSemaphoreLEFT.png);"); break;
+        }
     }
 }
 

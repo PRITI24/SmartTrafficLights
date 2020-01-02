@@ -9,5 +9,9 @@
         <file>images/mainwindow/greenSemaphore.png</file>
         <file>images/mainwindow/redSemaphore.png</file>
         <file>images/mainwindow/car.png</file>
+        <file>images/mainwindow/greenSemaphoreLEFT.png</file>
+        <file>images/mainwindow/greenSemaphoreUP.png</file>
+        <file>images/mainwindow/redSemaphoreLEFT.png</file>
+        <file>images/mainwindow/redSemaphoreUP.png</file>
     </qresource>
 </RCC>

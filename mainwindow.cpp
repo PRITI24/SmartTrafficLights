@@ -25,11 +25,15 @@ void MainWindow::crossroadI()
     m_i = new CrossroadI;
     m_i->setAttribute(Qt::WA_DeleteOnClose);
     m_i->show();
+    this->close();
 }
 
 void MainWindow::crossroadTa()
 {
-    qDebug() << " crossroadTa ";
+    m_ta = new CrossroadTa;
+    m_ta->setAttribute(Qt::WA_DeleteOnClose);
+    m_ta->show();
+    this->close();
 }
 
 void MainWindow::crossroadTb()
