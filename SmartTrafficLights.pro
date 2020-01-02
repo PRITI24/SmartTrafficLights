@@ -18,6 +18,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     crossroadi.cpp \
     crossroadta.cpp \
+    crossroadtb.cpp \
     fuzzycontroller.cpp \
     fuzzyinput.cpp \
     fuzzyinputvariable.cpp \
@@ -35,6 +36,7 @@ HEADERS += \
     column.hpp \
     crossroadi.hpp \
     crossroadta.hpp \
+    crossroadtb.hpp \
     fuzzycontroller.hpp \
     fuzzyinput.hpp \
     fuzzyinputvariable.hpp \
@@ -50,6 +52,7 @@ HEADERS += \
 FORMS += \
     crossroadi.ui \
     crossroadta.ui \
+    crossroadtb.ui \
     mainwindow.ui
 
 # Default rules for deployment.
