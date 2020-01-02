@@ -68,12 +68,6 @@ void CrossroadI::scheduledCarForCColumn2()
     _Ccolumn2->scheduleCar();
 }
 
-/*
-   if (e < 0) {
-       qDebug << QString::number(extension1) << " - " << QString::number(extension2);
-   }
-*/
-
 void CrossroadI::s1Timeout()
 {
 
@@ -117,6 +111,18 @@ void CrossroadI::c1Timeout(){
     _c1Timer.start();
 }
 
+void CrossroadI::increaseTotalS()
+{
+    _totalCarsSmart++;
+    ui->totalCarsSmart->setText(QString::number(_totalCarsSmart));
+}
+
+void CrossroadI::increaseTotalC()
+{
+    _totalCarsConv++;
+    ui->totalCarsConv->setText(QString::number(_totalCarsConv/2));
+}
+
 void CrossroadI::setupSemaphores()
 {
     ui->_Ssemaphore1->setState(State::RED);
@@ -133,11 +139,15 @@ void CrossroadI::setupColumns()
     _Scolumn2 = new Column(this, 12, Direction::UP, 200, 580, 100, 20);
     _Scolumn2->attachSemaphore(ui->_Ssemaphore2);
     _Scolumn2->setArrivalSensorPlace(5);
+    connect(_Scolumn1, &Column::increaseTotalCars, this, &CrossroadI::increaseTotalS);
+    connect(_Scolumn2, &Column::increaseTotalCars, this, &CrossroadI::increaseTotalS);
 
     _Ccolumn1 = new Column(this, 12, Direction::DOWN, 500, 60, 100, 20);
     _Ccolumn1->attachSemaphore(ui->_Csemaphore1);
     _Ccolumn2 = new Column(this, 12, Direction::UP, 620, 580, 100, 20);
     _Ccolumn2->attachSemaphore(ui->_Csemaphore2);
+    connect(_Ccolumn1, &Column::increaseTotalCars, this, &CrossroadI::increaseTotalC);
+    connect(_Ccolumn1, &Column::increaseTotalCars, this, &CrossroadI::increaseTotalC);
 }
 
 void CrossroadI::setupTimeout()
@@ -205,5 +215,5 @@ float CrossroadI::fuzzyBrain(int queueLength, int arrivalRate)
 
     //qDebug() << "fuzzybrain:" << QString::number(result);
 
-    return result*100;
+    return result * MULTIPLIER;
 }

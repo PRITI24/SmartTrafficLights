@@ -52,7 +52,10 @@ void Column::columnTimeout()
                 m_column[i-1]->setType(0);
             }
     }
-    else {
+    else {  // If attached semaphore is green ...
+        if(m_column[m_columnSize-1]->type())
+            emit increaseTotalCars();
+
         for(int i = m_column.size()-2; i >= 0; i--) {
             m_column[i+1]->setType(m_column[i]->type());
         }

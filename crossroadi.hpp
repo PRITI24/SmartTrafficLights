@@ -1,9 +1,10 @@
 #ifndef CROSSROADI_HPP
 #define CROSSROADI_HPP
 
-#define TIMEOUT 1330
-#define GREENLIGHT 8000
-#define REDLIGHT 4000
+#define TIMEOUT 1150
+#define GREENLIGHT 3000
+#define REDLIGHT 7000
+#define MULTIPLIER 180
 
 #include <QWidget>
 #include <QTimer>
@@ -36,6 +37,9 @@ private slots:
     void s1Timeout();
     void c1Timeout();
 
+    void increaseTotalS();
+    void increaseTotalC();
+
 private:
     void setupSemaphores();
     void setupColumns();
@@ -55,7 +59,6 @@ private:
     QTimer _sem1Green;
     QTimer _sem1Red;
 
-
     QTimer _s1Timer;
     QTimer _c1Timer;
 
@@ -68,6 +71,8 @@ private:
 
     bool previouslyExtended = false;
 
+    int _totalCarsSmart = 0;
+    int _totalCarsConv = 0;
 };
 
 #endif // CROSSROADI_HPP

@@ -28,6 +28,9 @@ public slots:
     int arrivalRate();
     int queueLength();
 
+signals:
+    void increaseTotalCars();
+
 private:
     QVector<Placeholder*> m_column;
     int m_columnSize;
