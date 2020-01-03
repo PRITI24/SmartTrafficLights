@@ -4,6 +4,7 @@
 #include <tests.hpp>
 #include <crossroadi.hpp>
 #include <crossroadta.hpp>
+#include <crossroadtb.hpp>
 
 #include <QMainWindow>
 
@@ -32,5 +33,6 @@ private:
 
     CrossroadI *m_i = nullptr;
     CrossroadTa *m_ta = nullptr;
+    CrossroadTb *m_tb = nullptr;
 };
 #endif // MAINWINDOW_HPP
