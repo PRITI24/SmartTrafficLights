@@ -1,5 +1,5 @@
-#ifndef CROSSROADTB_HPP
-#define CROSSROADTB_HPP
+#ifndef CROSSROADTC_HPP
+#define CROSSROADTC_HPP
 
 #define TIMEOUT 1150
 #define SEMAPHORE1 7000
@@ -15,17 +15,16 @@
 #include "fuzzycontroller.hpp"
 
 namespace Ui {
-class CrossroadTb;
+class CrossroadTc;
 }
 
-class CrossroadTb : public QWidget
+class CrossroadTc : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit CrossroadTb(QWidget *parent = nullptr);
-    ~CrossroadTb();
-
+    explicit CrossroadTc(QWidget *parent = 0);
+    ~CrossroadTc();
 public slots:
     void increaseSmart();
     void increaseConv();
@@ -33,10 +32,8 @@ public slots:
 private slots:
     void on_startSimulation_clicked();
     void on_buttonC1_clicked();
-    void on_buttonC3_clicked();
-    void on_buttonC4_clicked();
     void on_buttonC2_clicked();
-    void on_buttonC5_clicked();
+    void on_buttonC3_clicked();
     void convTimeout();
     void smartTimeout();
 
@@ -49,18 +46,14 @@ private:
 
 
 private:
-    Ui::CrossroadTb *ui;
+    Ui::CrossroadTc *ui;
 
     // Columns
     Column *_s1_1;
-    Column *_s1_2;
-    Column *_s1_3;
     Column *_s2_1;
     Column *_s3_1;
 
     Column *_c1_1;
-    Column *_c1_2;
-    Column *_c1_3;
     Column *_c2_1;
     Column *_c3_1;
 
@@ -81,4 +74,4 @@ private:
 
 };
 
-#endif // CROSSROADTB_HPP
+#endif // CROSSROADTC_HPP

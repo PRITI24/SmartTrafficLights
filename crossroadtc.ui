@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>CrossroadTb</class>
- <widget class="QWidget" name="CrossroadTb">
-  <property name="enabled">
-   <bool>true</bool>
-  </property>
+ <class>CrossroadTc</class>
+ <widget class="QWidget" name="CrossroadTc">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -26,516 +23,11 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Crossroad Tb</string>
+   <string>CrossroadTc</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(186, 189, 182);</string>
   </property>
-  <widget class="Line" name="separationLine_16">
-   <property name="geometry">
-    <rect>
-     <x>495</x>
-     <y>49</y>
-     <width>8</width>
-     <height>430</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>3</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="Semaphore" name="semC_1_3">
-   <property name="geometry">
-    <rect>
-     <x>688</x>
-     <y>340</y>
-     <width>16</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="separationLine_2">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>217</x>
-     <y>335</y>
-     <width>8</width>
-     <height>145</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>3</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="Semaphore" name="semS_1_2">
-   <property name="geometry">
-    <rect>
-     <x>115</x>
-     <y>328</y>
-     <width>16</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="separationLine_15">
-   <property name="geometry">
-    <rect>
-     <x>588</x>
-     <y>52</y>
-     <width>8</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>3</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="Semaphore" name="semS_1_3">
-   <property name="geometry">
-    <rect>
-     <x>228</x>
-     <y>340</y>
-     <width>16</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>295</x>
-     <y>4</y>
-     <width>161</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Smart semaphore system&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="Line" name="separationLine_6">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>129</x>
-     <y>50</y>
-     <width>8</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(186, 189, 182);</string>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>3</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="buttonC3">
-   <property name="geometry">
-    <rect>
-     <x>145</x>
-     <y>476</y>
-     <width>21</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>*</string>
-   </property>
-  </widget>
-  <widget class="Line" name="separationLine_7">
-   <property name="geometry">
-    <rect>
-     <x>128</x>
-     <y>345</y>
-     <width>8</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>3</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="separationLine_8">
-   <property name="geometry">
-    <rect>
-     <x>232</x>
-     <y>260</y>
-     <width>209</width>
-     <height>8</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>3</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="separationLine_14">
-   <property name="geometry">
-    <rect>
-     <x>680</x>
-     <y>330</y>
-     <width>221</width>
-     <height>8</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>3</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="separationLine_10">
-   <property name="geometry">
-    <rect>
-     <x>173</x>
-     <y>345</y>
-     <width>8</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>3</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="buttonC5">
-   <property name="geometry">
-    <rect>
-     <x>430</x>
-     <y>220</y>
-     <width>21</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>*</string>
-   </property>
-  </widget>
-  <widget class="Line" name="separationLine_9">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>50</y>
-     <width>16</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>3</number>
-   </property>
-   <property name="midLineWidth">
-    <number>0</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="separationLine_1">
-   <property name="geometry">
-    <rect>
-     <x>31</x>
-     <y>49</y>
-     <width>20</width>
-     <height>430</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>3</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="separationLine_20">
-   <property name="geometry">
-    <rect>
-     <x>633</x>
-     <y>345</y>
-     <width>8</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>3</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="buttonC1">
-   <property name="geometry">
-    <rect>
-     <x>57</x>
-     <y>33</y>
-     <width>21</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>*</string>
-   </property>
-  </widget>
-  <widget class="Line" name="separationLine_18">
-   <property name="geometry">
-    <rect>
-     <x>692</x>
-     <y>260</y>
-     <width>209</width>
-     <height>8</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>3</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="separationLine_13">
-   <property name="geometry">
-    <rect>
-     <x>680</x>
-     <y>190</y>
-     <width>221</width>
-     <height>8</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>3</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="Semaphore" name="semC_2_1">
-   <property name="geometry">
-    <rect>
-     <x>595</x>
-     <y>150</y>
-     <width>16</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="startSimulation">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>5</y>
-     <width>101</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Start simulation</string>
-   </property>
-  </widget>
-  <widget class="Semaphore" name="semS_3_1">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>250</y>
-     <width>31</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="separationLine_17">
-   <property name="geometry">
-    <rect>
-     <x>677</x>
-     <y>335</y>
-     <width>8</width>
-     <height>145</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>3</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="totalCarsConv">
-   <property name="geometry">
-    <rect>
-     <x>795</x>
-     <y>50</y>
-     <width>51</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="readOnly">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="Semaphore" name="semC_3_1">
-   <property name="geometry">
-    <rect>
-     <x>685</x>
-     <y>269</y>
-     <width>31</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-  </widget>
-  <widget class="Semaphore" name="semS_2_1">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>160</y>
-     <width>16</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="separationLine_19">
-   <property name="geometry">
-    <rect>
-     <x>545</x>
-     <y>50</y>
-     <width>8</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>3</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
@@ -971,24 +463,27 @@
 </string>
    </property>
   </widget>
-  <widget class="QPushButton" name="buttonC4">
+  <widget class="Semaphore" name="semS_3_1">
    <property name="geometry">
     <rect>
-     <x>189</x>
-     <y>475</y>
-     <width>21</width>
+     <x>230</x>
+     <y>250</y>
+     <width>31</width>
      <height>16</height>
     </rect>
    </property>
-   <property name="text">
-    <string>*</string>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="Line" name="separationLine_3">
+  <widget class="Line" name="separationLine_13">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>330</y>
+     <x>680</x>
+     <y>190</y>
      <width>221</width>
      <height>8</height>
     </rect>
@@ -1003,42 +498,13 @@
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="Semaphore" name="semC_1_2">
+  <widget class="Line" name="separationLine_5">
    <property name="geometry">
     <rect>
-     <x>571</x>
-     <y>340</y>
-     <width>16</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="totalCarsSmart">
-   <property name="geometry">
-    <rect>
-     <x>335</x>
+     <x>215</x>
      <y>50</y>
-     <width>51</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="readOnly">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="Line" name="separationLine_21">
-   <property name="geometry">
-    <rect>
-     <x>588</x>
-     <y>345</y>
      <width>8</width>
-     <height>131</height>
+     <height>145</height>
     </rect>
    </property>
    <property name="frameShadow">
@@ -1049,19 +515,6 @@
    </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="buttonC2">
-   <property name="geometry">
-    <rect>
-     <x>101</x>
-     <y>33</y>
-     <width>21</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>*</string>
    </property>
   </widget>
   <widget class="Line" name="separationLine_22">
@@ -1083,30 +536,11 @@
     <enum>Qt::Vertical</enum>
    </property>
   </widget>
-  <widget class="Line" name="separationMiddle">
+  <widget class="Semaphore" name="semC_2_1">
    <property name="geometry">
     <rect>
-     <x>455</x>
-     <y>0</y>
-     <width>10</width>
-     <height>515</height>
-    </rect>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
-   </property>
-   <property name="lineWidth">
-    <number>3</number>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="Semaphore" name="semC_1_1">
-   <property name="geometry">
-    <rect>
-     <x>478</x>
-     <y>150</y>
+     <x>595</x>
+     <y>340</y>
      <width>16</width>
      <height>31</height>
     </rect>
@@ -1137,11 +571,138 @@
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="Semaphore" name="semS_1_1">
+  <widget class="Line" name="separationLine_6">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>160</y>
+     <x>129</x>
+     <y>50</y>
+     <width>8</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(186, 189, 182);</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_14">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>330</y>
+     <width>221</width>
+     <height>8</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_8">
+   <property name="geometry">
+    <rect>
+     <x>232</x>
+     <y>260</y>
+     <width>209</width>
+     <height>8</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonC1">
+   <property name="geometry">
+    <rect>
+     <x>57</x>
+     <y>33</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>*</string>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_7">
+   <property name="geometry">
+    <rect>
+     <x>128</x>
+     <y>345</y>
+     <width>8</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="totalCarsConv">
+   <property name="geometry">
+    <rect>
+     <x>795</x>
+     <y>50</y>
+     <width>51</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_21">
+   <property name="geometry">
+    <rect>
+     <x>588</x>
+     <y>345</y>
+     <width>8</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Semaphore" name="semS_2_1">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>330</y>
      <width>16</width>
      <height>31</height>
     </rect>
@@ -1153,13 +714,138 @@
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="Line" name="separationLine_5">
+  <widget class="Semaphore" name="semC_1_1">
    <property name="geometry">
     <rect>
-     <x>215</x>
-     <y>50</y>
+     <x>478</x>
+     <y>150</y>
+     <width>16</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_17">
+   <property name="geometry">
+    <rect>
+     <x>677</x>
+     <y>335</y>
      <width>8</width>
      <height>145</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_16">
+   <property name="geometry">
+    <rect>
+     <x>495</x>
+     <y>49</y>
+     <width>8</width>
+     <height>430</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>465</x>
+     <y>5</y>
+     <width>201</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Conventional semaphore system&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>295</x>
+     <y>4</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Smart semaphore system&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonC2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>480</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>*</string>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_18">
+   <property name="geometry">
+    <rect>
+     <x>692</x>
+     <y>260</y>
+     <width>209</width>
+     <height>8</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="startSimulation">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>5</y>
+     <width>101</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Start simulation</string>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_1">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>49</y>
+     <width>20</width>
+     <height>430</height>
     </rect>
    </property>
    <property name="frameShadow">
@@ -1607,62 +1293,179 @@
 </string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLineEdit" name="totalCarsSmart">
    <property name="geometry">
     <rect>
-     <x>465</x>
-     <y>5</y>
-     <width>201</width>
+     <x>335</x>
+     <y>50</y>
+     <width>51</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Semaphore" name="semS_1_1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>160</y>
+     <width>16</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationMiddle">
+   <property name="geometry">
+    <rect>
+     <x>455</x>
+     <y>0</y>
+     <width>10</width>
+     <height>515</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>217</x>
+     <y>335</y>
+     <width>8</width>
+     <height>145</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Semaphore" name="semC_3_1">
+   <property name="geometry">
+    <rect>
+     <x>685</x>
+     <y>269</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonC3">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>220</y>
+     <width>21</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Conventional semaphore system&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>*</string>
    </property>
   </widget>
-  <zorder>totalCarsConv</zorder>
-  <zorder>totalCarsSmart</zorder>
-  <zorder>startSimulation</zorder>
+  <widget class="Line" name="separationLine_15">
+   <property name="geometry">
+    <rect>
+     <x>588</x>
+     <y>52</y>
+     <width>8</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="separationLine_3">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>330</y>
+     <width>221</width>
+     <height>8</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
   <zorder>label_4</zorder>
-  <zorder>label_2</zorder>
-  <zorder>label_3</zorder>
-  <zorder>buttonC5</zorder>
-  <zorder>buttonC4</zorder>
-  <zorder>buttonC1</zorder>
-  <zorder>buttonC3</zorder>
-  <zorder>buttonC2</zorder>
-  <zorder>label</zorder>
-  <zorder>separationLine_4</zorder>
-  <zorder>separationLine_7</zorder>
-  <zorder>separationLine_15</zorder>
-  <zorder>separationLine_18</zorder>
-  <zorder>separationLine_21</zorder>
-  <zorder>semC_1_2</zorder>
-  <zorder>separationLine_9</zorder>
-  <zorder>separationLine_19</zorder>
-  <zorder>separationLine_1</zorder>
-  <zorder>semS_1_2</zorder>
-  <zorder>semC_2_1</zorder>
-  <zorder>separationLine_3</zorder>
-  <zorder>separationLine_5</zorder>
-  <zorder>semC_1_1</zorder>
-  <zorder>separationLine_6</zorder>
-  <zorder>separationMiddle</zorder>
-  <zorder>separationLine_14</zorder>
-  <zorder>separationLine_17</zorder>
   <zorder>separationLine_13</zorder>
-  <zorder>separationLine_10</zorder>
+  <zorder>separationLine_5</zorder>
   <zorder>separationLine_22</zorder>
+  <zorder>semC_2_1</zorder>
+  <zorder>separationLine_4</zorder>
+  <zorder>separationLine_6</zorder>
+  <zorder>separationLine_14</zorder>
+  <zorder>separationLine_8</zorder>
+  <zorder>buttonC1</zorder>
+  <zorder>separationLine_7</zorder>
+  <zorder>totalCarsConv</zorder>
+  <zorder>separationLine_21</zorder>
+  <zorder>semS_2_1</zorder>
+  <zorder>semC_1_1</zorder>
+  <zorder>separationLine_17</zorder>
+  <zorder>separationLine_16</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label</zorder>
+  <zorder>buttonC2</zorder>
+  <zorder>separationLine_18</zorder>
+  <zorder>startSimulation</zorder>
+  <zorder>separationLine_1</zorder>
+  <zorder>label_3</zorder>
+  <zorder>totalCarsSmart</zorder>
+  <zorder>semS_1_1</zorder>
+  <zorder>separationMiddle</zorder>
   <zorder>separationLine_2</zorder>
   <zorder>semC_3_1</zorder>
-  <zorder>separationLine_8</zorder>
-  <zorder>separationLine_20</zorder>
-  <zorder>semC_1_3</zorder>
-  <zorder>semS_1_3</zorder>
+  <zorder>buttonC3</zorder>
+  <zorder>separationLine_15</zorder>
+  <zorder>separationLine_3</zorder>
   <zorder>semS_3_1</zorder>
-  <zorder>semS_2_1</zorder>
-  <zorder>separationLine_16</zorder>
-  <zorder>semS_1_1</zorder>
  </widget>
  <customwidgets>
   <customwidget>

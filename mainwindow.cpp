@@ -38,7 +38,6 @@ void MainWindow::crossroadTa()
 
 void MainWindow::crossroadTb()
 {
-//    qDebug() << " crossroadTb ";
     m_tb = new CrossroadTb;
     m_tb->setAttribute(Qt::WA_DeleteOnClose);
     m_tb->show();
@@ -47,7 +46,10 @@ void MainWindow::crossroadTb()
 
 void MainWindow::crossroadTc()
 {
-    qDebug() << " crossroadTc ";
+    m_tc = new CrossroadTc;
+    m_tc->setAttribute(Qt::WA_DeleteOnClose);
+    m_tc->show();
+    this->close();
 }
 
 void MainWindow::crossroadXa()

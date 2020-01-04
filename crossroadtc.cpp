@@ -1,9 +1,9 @@
-#include "crossroadtb.hpp"
-#include "ui_crossroadtb.h"
+#include "crossroadtc.hpp"
+#include "ui_crossroadtc.h"
 
-CrossroadTb::CrossroadTb(QWidget *parent) :
+CrossroadTc::CrossroadTc(QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::CrossroadTb)
+    ui(new Ui::CrossroadTc)
 {
     ui->setupUi(this);
 
@@ -16,28 +16,26 @@ CrossroadTb::CrossroadTb(QWidget *parent) :
     ui->buttonC1->raise();
     ui->buttonC2->raise();
     ui->buttonC3->raise();
-    ui->buttonC4->raise();
-    ui->buttonC5->raise();
 }
 
-CrossroadTb::~CrossroadTb()
+CrossroadTc::~CrossroadTc()
 {
     delete ui;
 }
 
-void CrossroadTb::increaseSmart()
+void CrossroadTc::increaseSmart()
 {
     _smartTotal++;
     ui->totalCarsSmart->setText(QString::number(_smartTotal));
 }
 
-void CrossroadTb::increaseConv()
+void CrossroadTc::increaseConv()
 {
     _convTotal++;
     ui->totalCarsConv->setText(QString::number(_convTotal));
 }
 
-void CrossroadTb::setupSemaphores()
+void CrossroadTc::setupSemaphores()
 {
     // Changing orientation of semaphores, where neccessary
     ui->semS_3_1->setDirection(Orientation::LEFT1);
@@ -45,11 +43,7 @@ void CrossroadTb::setupSemaphores()
 
     // Semaphore 1 in description of crossroad, both smart and conv
     ui->semS_1_1->setState(State::GREEN);
-    ui->semS_1_2->setState(State::GREEN);
-    ui->semS_1_3->setState(State::GREEN);
     ui->semC_1_1->setState(State::GREEN);
-    ui->semC_1_2->setState(State::GREEN);
-    ui->semC_1_3->setState(State::GREEN);
 
     // Semaphore 2 in description of crossroad, both smart and conv
     ui->semS_2_1->setState(State::RED);
@@ -60,92 +54,68 @@ void CrossroadTb::setupSemaphores()
     ui->semC_3_1->setState(State::RED);
 }
 
-void CrossroadTb::setupColumns()
+void CrossroadTc::setupColumns()
 {
     // Columns in SMART part of ui
-    _s1_1 = new Column(this, 9, Direction::DOWN, 45, 55, 40, 15);
+    _s1_1 = new Column(this, 9, Direction::DOWN, 65, 55, 40, 15);
     _s1_1->attachSemaphore(ui->semS_1_1);
     _s1_1->setArrivalSensorPlace(4);
-    connect(_s1_1, &Column::increaseTotalCars, this, &CrossroadTb::increaseSmart);
+    connect(_s1_1, &Column::increaseTotalCars, this, &CrossroadTc::increaseSmart);
 
-    _s1_2 = new Column(this, 9, Direction::UP, 135, 460, 40, 15);
-    _s1_2->attachSemaphore(ui->semS_1_2);
-    _s1_2->setArrivalSensorPlace(4);
-    connect(_s1_2, &Column::increaseTotalCars, this, &CrossroadTb::increaseSmart);
-
-    _s1_3 = new Column(this, 9, Direction::UP, 180, 460, 40, 15);
-    _s1_3->attachSemaphore(ui->semS_1_3);
-    _s1_3->setArrivalSensorPlace(4);
-    connect(_s1_3, &Column::increaseTotalCars, this, &CrossroadTb::increaseSmart);
-
-    _s2_1 = new Column(this, 9, Direction::DOWN, 90, 55, 40, 15);
+    _s2_1 = new Column(this, 9, Direction::UP, 155, 460, 40, 15);
     _s2_1->attachSemaphore(ui->semS_2_1);
     _s2_1->setArrivalSensorPlace(4);
-    connect(_s2_1, &Column::increaseTotalCars, this, &CrossroadTb::increaseSmart);
+    connect(_s2_1, &Column::increaseTotalCars, this, &CrossroadTc::increaseSmart);
 
     _s3_1 = new Column(this, 14, Direction::RIGHT, 420, 220, 15, 25);
     _s3_1->attachSemaphore(ui->semS_3_1);
     _s3_1->setArrivalSensorPlace(4);
-    connect(_s3_1, &Column::increaseTotalCars, this, &CrossroadTb::increaseSmart);
+    connect(_s3_1, &Column::increaseTotalCars, this, &CrossroadTc::increaseSmart);
 
     // Columns in CONV part of ui
-    _c1_1 = new Column(this, 9, Direction::DOWN, 505, 55, 40, 15);
+    _c1_1 = new Column(this, 9, Direction::DOWN, 525, 55, 40, 15);
     _c1_1->attachSemaphore(ui->semC_1_1);
     _c1_1->setArrivalSensorPlace(4);
-    connect(_c1_1, &Column::increaseTotalCars, this, &CrossroadTb::increaseConv);
+    connect(_c1_1, &Column::increaseTotalCars, this, &CrossroadTc::increaseConv);
 
-    _c1_2 = new Column(this, 9, Direction::UP, 595, 460, 40, 15);
-    _c1_2->attachSemaphore(ui->semC_1_2);
-    _c1_2->setArrivalSensorPlace(4);
-    connect(_c1_2, &Column::increaseTotalCars, this, &CrossroadTb::increaseConv);
-
-    _c1_3 = new Column(this, 9, Direction::UP, 640, 460, 40, 15);
-    _c1_3->attachSemaphore(ui->semC_1_3);
-    _c1_3->setArrivalSensorPlace(4);
-    connect(_c1_3, &Column::increaseTotalCars, this, &CrossroadTb::increaseConv);
-
-    _c2_1 = new Column(this, 9, Direction::DOWN, 550, 55, 40, 15);
+    _c2_1 = new Column(this, 9, Direction::DOWN, 615, 460, 40, 15);
     _c2_1->attachSemaphore(ui->semC_2_1);
     _c2_1->setArrivalSensorPlace(4);
-    connect(_c2_1, &Column::increaseTotalCars, this, &CrossroadTb::increaseConv);
+    connect(_c2_1, &Column::increaseTotalCars, this, &CrossroadTc::increaseConv);
 
     _c3_1 = new Column(this, 14, Direction::RIGHT, 880, 220, 15, 25);
     _c3_1->attachSemaphore(ui->semC_3_1);
     _c3_1->setArrivalSensorPlace(4);
-    connect(_c3_1, &Column::increaseTotalCars, this, &CrossroadTb::increaseConv);
+    connect(_c3_1, &Column::increaseTotalCars, this, &CrossroadTc::increaseConv);
 }
 
-void CrossroadTb::setupTimeout()
+void CrossroadTc::setupTimeout()
 {
     _timeoutClock.setParent(this);
     _timeoutClock.setInterval(TIMEOUT);
 
     connect(&_timeoutClock, &QTimer::timeout, _s1_1, &Column::columnTimeout);
-    connect(&_timeoutClock, &QTimer::timeout, _s1_2, &Column::columnTimeout);
-    connect(&_timeoutClock, &QTimer::timeout, _s1_3, &Column::columnTimeout);
     connect(&_timeoutClock, &QTimer::timeout, _s2_1, &Column::columnTimeout);
     connect(&_timeoutClock, &QTimer::timeout, _s3_1, &Column::columnTimeout);
 
     connect(&_timeoutClock, &QTimer::timeout, _c1_1, &Column::columnTimeout);
-    connect(&_timeoutClock, &QTimer::timeout, _c1_2, &Column::columnTimeout);
-    connect(&_timeoutClock, &QTimer::timeout, _c1_3, &Column::columnTimeout);
     connect(&_timeoutClock, &QTimer::timeout, _c2_1, &Column::columnTimeout);
     connect(&_timeoutClock, &QTimer::timeout, _c3_1, &Column::columnTimeout);
 }
 
-void CrossroadTb::setupSemaphoreTimer()
+void CrossroadTc::setupSemaphoreTimer()
 {
     _semaphoreClockConv.setInterval(SEMAPHORE1);
-    connect(&_semaphoreClockConv, &QTimer::timeout, this, &CrossroadTb::convTimeout);
+    connect(&_semaphoreClockConv, &QTimer::timeout, this, &CrossroadTc::convTimeout);
 
     _semaphoreClockSmart.setInterval(SEMAPHORE1);
-    connect(&_semaphoreClockSmart, &QTimer::timeout, this, &CrossroadTb::smartTimeout);
+    connect(&_semaphoreClockSmart, &QTimer::timeout, this, &CrossroadTc::smartTimeout);
 
     _semaphoreClockConv.start();
     _semaphoreClockSmart.start();
 }
 
-void CrossroadTb::convTimeout()
+void CrossroadTc::convTimeout()
 {
     /* Green light is over on semaphore convIt. Timer is stopped.
      * We turn red light on convIt semaphore, and turn the green light
@@ -156,8 +126,6 @@ void CrossroadTb::convTimeout()
 
     if(convIt == 1) {
         ui->semC_1_1->changeState();
-        ui->semC_1_2->changeState();
-        ui->semC_1_3->changeState();
         convIt = 2;
         ui->semC_2_1->changeState();
         _semaphoreClockConv.setInterval(SEMAPHORE2);
@@ -172,14 +140,12 @@ void CrossroadTb::convTimeout()
         ui->semC_3_1->changeState();
         convIt = 1;
         ui->semC_1_1->changeState();
-        ui->semC_1_2->changeState();
-        ui->semC_1_3->changeState();
         _semaphoreClockConv.setInterval(SEMAPHORE1);
     }
     _semaphoreClockConv.start();
 }
 
-void CrossroadTb::smartTimeout()
+void CrossroadTc::smartTimeout()
 {
     /* This smartTimeout() is almost the same like previous.
      * Major difference is that at each timeout, we must check
@@ -191,16 +157,12 @@ void CrossroadTb::smartTimeout()
     if(smartIt == 1) {
         if(previouslyExtended == false) {
             float ext1 = fuzzyBrain(_s1_1->queueLength(), _s1_1->arrivalRate());
-            float ext2 = fuzzyBrain(_s1_2->queueLength(), _s1_2->arrivalRate());
-            float ext3 = fuzzyBrain(_s1_3->queueLength(), _s1_3->arrivalRate());
-            int extension = qCeil(double(ext1 + ext2 + ext3)/3);
+            int extension = qCeil(double(ext1)/3);
             _semaphoreClockSmart.setInterval(extension);
             previouslyExtended = true;
         }
         else {
             ui->semS_1_1->changeState();
-            ui->semS_1_2->changeState();
-            ui->semS_1_3->changeState();
             smartIt = 2;
             ui->semS_2_1->changeState();
             _semaphoreClockSmart.setInterval(SEMAPHORE2);
@@ -235,8 +197,6 @@ void CrossroadTb::smartTimeout()
             ui->semS_3_1->changeState();
             smartIt = 1;
             ui->semS_1_1->changeState();
-            ui->semS_1_2->changeState();
-            ui->semS_1_3->changeState();
             _semaphoreClockSmart.setInterval(SEMAPHORE1);
             previouslyExtended = false;
         }
@@ -244,43 +204,32 @@ void CrossroadTb::smartTimeout()
     _semaphoreClockSmart.start();
 }
 
-void CrossroadTb::on_startSimulation_clicked()
+void CrossroadTc::on_startSimulation_clicked()
 {
     ui->startSimulation->setEnabled(false);
     _timeoutClock.start();
 }
 
-void CrossroadTb::on_buttonC1_clicked()
+void CrossroadTc::on_buttonC1_clicked()
 {
     _s1_1->scheduleCar();
     _c1_1->scheduleCar();
 }
 
-void CrossroadTb::on_buttonC3_clicked()
-{
-    _s1_2->scheduleCar();
-    _c1_2->scheduleCar();
-}
 
-void CrossroadTb::on_buttonC4_clicked()
-{
-    _s1_3->scheduleCar();
-    _c1_3->scheduleCar();
-}
-
-void CrossroadTb::on_buttonC2_clicked()
+void CrossroadTc::on_buttonC2_clicked()
 {
     _s2_1->scheduleCar();
     _c2_1->scheduleCar();
 }
 
-void CrossroadTb::on_buttonC5_clicked()
+void CrossroadTc::on_buttonC3_clicked()
 {
     _s3_1->scheduleCar();
     _c3_1->scheduleCar();
 }
 
-float CrossroadTb::fuzzyBrain(int queueLength, int arrivalRate)
+float CrossroadTc::fuzzyBrain(int queueLength, int arrivalRate)
 {
     // FOR NOW JUST COPY THIS METHOD EVERYWHERE, SETUP FUZZY SYSTEM LATER !!!!
 
