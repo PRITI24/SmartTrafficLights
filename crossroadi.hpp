@@ -11,6 +11,7 @@
 #include <QPushButton>
 #include <QDebug>
 #include <QtMath>
+#include <QKeyEvent>
 #include "column.hpp"
 #include "fuzzycontroller.hpp"
 
@@ -45,7 +46,10 @@ private:
     void setupColumns();
     void setupTimeout();
     void setupSemaphoreTimers();
-    float fuzzyBrain(int queueLength, int arrivalRate);
+    int fuzzyBrain(int queueLength, int arrivalRate);
+
+protected:
+    void keyPressEvent(QKeyEvent *event);
 
 private:
     Ui::CrossroadI *ui;

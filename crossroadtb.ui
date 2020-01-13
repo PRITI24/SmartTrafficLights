@@ -190,7 +190,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>*</string>
+    <string>D</string>
    </property>
   </widget>
   <widget class="Line" name="separationLine_7">
@@ -282,7 +282,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>*</string>
+    <string>I</string>
    </property>
   </widget>
   <widget class="Line" name="separationLine_9">
@@ -364,7 +364,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>*</string>
+    <string>A</string>
    </property>
   </widget>
   <widget class="Line" name="separationLine_18">
@@ -424,10 +424,10 @@
   <widget class="QPushButton" name="startSimulation">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>5</x>
      <y>5</y>
-     <width>101</width>
-     <height>24</height>
+     <width>100</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="text">
@@ -472,8 +472,8 @@
   <widget class="QLineEdit" name="totalCarsConv">
    <property name="geometry">
     <rect>
-     <x>795</x>
-     <y>50</y>
+     <x>800</x>
+     <y>45</y>
      <width>51</width>
      <height>24</height>
     </rect>
@@ -981,7 +981,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>*</string>
+    <string>F</string>
    </property>
   </widget>
   <widget class="Line" name="separationLine_3">
@@ -1022,8 +1022,8 @@
   <widget class="QLineEdit" name="totalCarsSmart">
    <property name="geometry">
     <rect>
-     <x>335</x>
-     <y>50</y>
+     <x>340</x>
+     <y>45</y>
      <width>51</width>
      <height>24</height>
     </rect>
@@ -1061,7 +1061,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>*</string>
+    <string>S</string>
    </property>
   </widget>
   <widget class="Line" name="separationLine_22">

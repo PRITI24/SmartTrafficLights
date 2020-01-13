@@ -135,10 +135,10 @@ void CrossroadTb::setupTimeout()
 
 void CrossroadTb::setupSemaphoreTimer()
 {
-    _semaphoreClockConv.setInterval(SEMAPHORE1);
+    _semaphoreClockConv.setInterval(SEMAPHORE1_TB);
     connect(&_semaphoreClockConv, &QTimer::timeout, this, &CrossroadTb::convTimeout);
 
-    _semaphoreClockSmart.setInterval(SEMAPHORE1);
+    _semaphoreClockSmart.setInterval(SEMAPHORE1_TB);
     connect(&_semaphoreClockSmart, &QTimer::timeout, this, &CrossroadTb::smartTimeout);
 
     _semaphoreClockConv.start();
@@ -160,13 +160,13 @@ void CrossroadTb::convTimeout()
         ui->semC_1_3->changeState();
         convIt = 2;
         ui->semC_2_1->changeState();
-        _semaphoreClockConv.setInterval(SEMAPHORE2);
+        _semaphoreClockConv.setInterval(SEMAPHORE2_TB);
     }
     else if(convIt == 2) {
         ui->semC_2_1->changeState();
         convIt = 3;
         ui->semC_3_1->changeState();
-        _semaphoreClockConv.setInterval(SEMAPHORE3);
+        _semaphoreClockConv.setInterval(SEMAPHORE3_TB);
     }
     else if(convIt == 3) {
         ui->semC_3_1->changeState();
@@ -174,7 +174,7 @@ void CrossroadTb::convTimeout()
         ui->semC_1_1->changeState();
         ui->semC_1_2->changeState();
         ui->semC_1_3->changeState();
-        _semaphoreClockConv.setInterval(SEMAPHORE1);
+        _semaphoreClockConv.setInterval(SEMAPHORE1_TB);
     }
     _semaphoreClockConv.start();
 }
@@ -203,7 +203,7 @@ void CrossroadTb::smartTimeout()
             ui->semS_1_3->changeState();
             smartIt = 2;
             ui->semS_2_1->changeState();
-            _semaphoreClockSmart.setInterval(SEMAPHORE2);
+            _semaphoreClockSmart.setInterval(SEMAPHORE2_TB);
             previouslyExtended = false;
         }
     }
@@ -219,7 +219,7 @@ void CrossroadTb::smartTimeout()
             ui->semS_2_1->changeState();
             smartIt = 3;
             ui->semS_3_1->changeState();
-            _semaphoreClockSmart.setInterval(SEMAPHORE3);
+            _semaphoreClockSmart.setInterval(SEMAPHORE3_TB);
             previouslyExtended = false;
         }
     }
@@ -237,7 +237,7 @@ void CrossroadTb::smartTimeout()
             ui->semS_1_1->changeState();
             ui->semS_1_2->changeState();
             ui->semS_1_3->changeState();
-            _semaphoreClockSmart.setInterval(SEMAPHORE1);
+            _semaphoreClockSmart.setInterval(SEMAPHORE1_TB);
             previouslyExtended = false;
         }
     }
@@ -252,32 +252,42 @@ void CrossroadTb::on_startSimulation_clicked()
 
 void CrossroadTb::on_buttonC1_clicked()
 {
-    _s1_1->scheduleCar();
-    _c1_1->scheduleCar();
-}
-
-void CrossroadTb::on_buttonC3_clicked()
-{
-    _s1_2->scheduleCar();
-    _c1_2->scheduleCar();
-}
-
-void CrossroadTb::on_buttonC4_clicked()
-{
-    _s1_3->scheduleCar();
-    _c1_3->scheduleCar();
+    if(!(_s1_1->columnFull() || _c1_1->columnFull())) {
+        _s1_1->scheduleCar();
+        _c1_1->scheduleCar();
+    }
 }
 
 void CrossroadTb::on_buttonC2_clicked()
 {
-    _s2_1->scheduleCar();
-    _c2_1->scheduleCar();
+    if(!(_s2_1->columnFull()) && !(_c2_1->columnFull())) {
+        _s2_1->scheduleCar();
+        _c2_1->scheduleCar();
+    }
+}
+
+void CrossroadTb::on_buttonC3_clicked()
+{
+    if(!(_s1_2->columnFull()) && !(_c1_2->columnFull())) {
+        _s1_2->scheduleCar();
+        _c1_2->scheduleCar();
+    }
+}
+
+void CrossroadTb::on_buttonC4_clicked()
+{
+    if(!(_s1_3->columnFull()) && !(_c1_3->columnFull())) {
+        _s1_3->scheduleCar();
+        _c1_3->scheduleCar();
+    }
 }
 
 void CrossroadTb::on_buttonC5_clicked()
 {
-    _s3_1->scheduleCar();
-    _c3_1->scheduleCar();
+    if(!(_s3_1->columnFull()) && !(_c3_1->columnFull())) {
+        _s3_1->scheduleCar();
+        _c3_1->scheduleCar();
+    }
 }
 
 float CrossroadTb::fuzzyBrain(int queueLength, int arrivalRate)
@@ -323,7 +333,21 @@ float CrossroadTb::fuzzyBrain(int queueLength, int arrivalRate)
 
     float result = qCeil(double(_controller1->solve()));
 
-    //qDebug() << "fuzzybrain:" << QString::number(result);
+    result < 0 ? result = 0 : result;
 
-    return result * MULTIPLIER;
+    return result * MULTIPLIER_TB;
+}
+
+void CrossroadTb::keyPressEvent(QKeyEvent *event)
+{
+    if(event->key() == Qt::Key_A)
+        ui->buttonC1->click();
+    if(event->key() == Qt::Key_S)
+        ui->buttonC2->click();
+    if(event->key() == Qt::Key_D)
+        ui->buttonC3->click();
+    if(event->key() == Qt::Key_F)
+        ui->buttonC4->click();
+    if(event->key() == Qt::Key_I)
+        ui->buttonC5->click();
 }

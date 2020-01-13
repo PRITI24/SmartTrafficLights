@@ -2,13 +2,14 @@
 #define CROSSROADTA_HPP
 
 #define TIMEOUT 1150
-#define SEMAPHORE1 7000
-#define SEMAPHORE2 4000
-#define SEMAPHORE3 3000
-#define MULTIPLIER 180
+#define SEMAPHORE1_TA 7000
+#define SEMAPHORE2_TA 4000
+#define SEMAPHORE3_TA 4000
+#define MULTIPLIER_TA 200
 
 #include <QWidget>
 #include <QTimer>
+#include <QKeyEvent>
 #include <QDebug>
 #include <QtMath>
 #include "column.hpp"
@@ -48,6 +49,8 @@ private:
     void setupSemaphoreTimer();
     float fuzzyBrain(int queueLength, int arrivalRate);
 
+protected:
+    void keyPressEvent(QKeyEvent *event);
 
 private:
     Ui::CrossroadTa *ui;

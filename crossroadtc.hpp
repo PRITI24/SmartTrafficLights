@@ -2,12 +2,13 @@
 #define CROSSROADTC_HPP
 
 #define TIMEOUT 1150
-#define SEMAPHORE1 7000
-#define SEMAPHORE2 4000
-#define SEMAPHORE3 3000
-#define MULTIPLIER 180
+#define SEMAPHORE1_TC 7000
+#define SEMAPHORE2_TC 4000
+#define SEMAPHORE3_TC 3000
+#define MULTIPLIER_TC 180
 
 #include <QWidget>
+#include <QKeyEvent>
 #include <QTimer>
 #include <QDebug>
 #include <QtMath>
@@ -23,7 +24,7 @@ class CrossroadTc : public QWidget
     Q_OBJECT
 
 public:
-    explicit CrossroadTc(QWidget *parent = 0);
+    explicit CrossroadTc(QWidget *parent = nullptr);
     ~CrossroadTc();
 public slots:
     void increaseSmart();
@@ -44,6 +45,8 @@ private:
     void setupSemaphoreTimer();
     float fuzzyBrain(int queueLength, int arrivalRate);
 
+protected:
+    void keyPressEvent(QKeyEvent *event);
 
 private:
     Ui::CrossroadTc *ui;

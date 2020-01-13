@@ -78,7 +78,7 @@ void CrossroadTc::setupColumns()
     _c1_1->setArrivalSensorPlace(4);
     connect(_c1_1, &Column::increaseTotalCars, this, &CrossroadTc::increaseConv);
 
-    _c2_1 = new Column(this, 9, Direction::DOWN, 615, 460, 40, 15);
+    _c2_1 = new Column(this, 9, Direction::UP, 615, 460, 40, 15);
     _c2_1->attachSemaphore(ui->semC_2_1);
     _c2_1->setArrivalSensorPlace(4);
     connect(_c2_1, &Column::increaseTotalCars, this, &CrossroadTc::increaseConv);
@@ -105,10 +105,10 @@ void CrossroadTc::setupTimeout()
 
 void CrossroadTc::setupSemaphoreTimer()
 {
-    _semaphoreClockConv.setInterval(SEMAPHORE1);
+    _semaphoreClockConv.setInterval(SEMAPHORE1_TC);
     connect(&_semaphoreClockConv, &QTimer::timeout, this, &CrossroadTc::convTimeout);
 
-    _semaphoreClockSmart.setInterval(SEMAPHORE1);
+    _semaphoreClockSmart.setInterval(SEMAPHORE1_TC);
     connect(&_semaphoreClockSmart, &QTimer::timeout, this, &CrossroadTc::smartTimeout);
 
     _semaphoreClockConv.start();
@@ -128,19 +128,19 @@ void CrossroadTc::convTimeout()
         ui->semC_1_1->changeState();
         convIt = 2;
         ui->semC_2_1->changeState();
-        _semaphoreClockConv.setInterval(SEMAPHORE2);
+        _semaphoreClockConv.setInterval(SEMAPHORE2_TC);
     }
     else if(convIt == 2) {
         ui->semC_2_1->changeState();
         convIt = 3;
         ui->semC_3_1->changeState();
-        _semaphoreClockConv.setInterval(SEMAPHORE3);
+        _semaphoreClockConv.setInterval(SEMAPHORE3_TC);
     }
     else if(convIt == 3) {
         ui->semC_3_1->changeState();
         convIt = 1;
         ui->semC_1_1->changeState();
-        _semaphoreClockConv.setInterval(SEMAPHORE1);
+        _semaphoreClockConv.setInterval(SEMAPHORE1_TC);
     }
     _semaphoreClockConv.start();
 }
@@ -165,7 +165,7 @@ void CrossroadTc::smartTimeout()
             ui->semS_1_1->changeState();
             smartIt = 2;
             ui->semS_2_1->changeState();
-            _semaphoreClockSmart.setInterval(SEMAPHORE2);
+            _semaphoreClockSmart.setInterval(SEMAPHORE2_TC);
             previouslyExtended = false;
         }
     }
@@ -181,7 +181,7 @@ void CrossroadTc::smartTimeout()
             ui->semS_2_1->changeState();
             smartIt = 3;
             ui->semS_3_1->changeState();
-            _semaphoreClockSmart.setInterval(SEMAPHORE3);
+            _semaphoreClockSmart.setInterval(SEMAPHORE3_TC);
             previouslyExtended = false;
         }
     }
@@ -197,7 +197,7 @@ void CrossroadTc::smartTimeout()
             ui->semS_3_1->changeState();
             smartIt = 1;
             ui->semS_1_1->changeState();
-            _semaphoreClockSmart.setInterval(SEMAPHORE1);
+            _semaphoreClockSmart.setInterval(SEMAPHORE1_TC);
             previouslyExtended = false;
         }
     }
@@ -274,5 +274,15 @@ float CrossroadTc::fuzzyBrain(int queueLength, int arrivalRate)
 
     //qDebug() << "fuzzybrain:" << QString::number(result);
 
-    return result * MULTIPLIER;
+    return result * MULTIPLIER_TC;
+}
+
+void CrossroadTc::keyPressEvent(QKeyEvent *event)
+{
+    if(event->key() == Qt::Key_A)
+        ui->buttonC1->click();
+    if(event->key() == Qt::Key_S)
+        ui->buttonC2->click();
+    if(event->key() == Qt::Key_D)
+        ui->buttonC3->click();
 }

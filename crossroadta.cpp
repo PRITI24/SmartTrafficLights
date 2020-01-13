@@ -70,22 +70,22 @@ void CrossroadTa::setupColumns()
     // Columns in SMART part of ui
     _s1_1 = new Column(this, 9, Direction::DOWN, 50, 55, 40, 15);
     _s1_1->attachSemaphore(ui->semS_1_1);
-    _s1_1->setArrivalSensorPlace(4);
+    _s1_1->setArrivalSensorPlace(3);
     connect(_s1_1, &Column::increaseTotalCars, this, &CrossroadTa::increaseSmart);
 
     _s1_2 = new Column(this, 9, Direction::UP, 140, 460, 40, 15);
     _s1_2->attachSemaphore(ui->semS_1_2);
-    _s1_2->setArrivalSensorPlace(4);
+    _s1_2->setArrivalSensorPlace(3);
     connect(_s1_2, &Column::increaseTotalCars, this, &CrossroadTa::increaseSmart);
 
     _s1_3 = new Column(this, 9, Direction::UP, 185, 460, 40, 15);
     _s1_3->attachSemaphore(ui->semS_1_3);
-    _s1_3->setArrivalSensorPlace(4);
+    _s1_3->setArrivalSensorPlace(3);
     connect(_s1_3, &Column::increaseTotalCars, this, &CrossroadTa::increaseSmart);
 
     _s2_1 = new Column(this, 9, Direction::DOWN, 95, 55, 40, 15);
     _s2_1->attachSemaphore(ui->semS_2_1);
-    _s2_1->setArrivalSensorPlace(4);
+    _s2_1->setArrivalSensorPlace(3);
     connect(_s2_1, &Column::increaseTotalCars, this, &CrossroadTa::increaseSmart);
 
     _s2_2 = new Column(this, 14, Direction::RIGHT, 420, 200, 15, 25);
@@ -101,33 +101,34 @@ void CrossroadTa::setupColumns()
     // Columns in CONV part of ui
     _c1_1 = new Column(this, 9, Direction::DOWN, 510, 55, 40, 15);
     _c1_1->attachSemaphore(ui->semC_1_1);
-    _c1_1->setArrivalSensorPlace(4);
+    _c1_1->setArrivalSensorPlace(0);
     connect(_c1_1, &Column::increaseTotalCars, this, &CrossroadTa::increaseConv);
 
     _c1_2 = new Column(this, 9, Direction::UP, 600, 460, 40, 15);
     _c1_2->attachSemaphore(ui->semC_1_2);
-    _c1_2->setArrivalSensorPlace(4);
+    _c1_2->setArrivalSensorPlace(0);
     connect(_c1_2, &Column::increaseTotalCars, this, &CrossroadTa::increaseConv);
 
     _c1_3 = new Column(this, 9, Direction::UP, 645, 460, 40, 15);
     _c1_3->attachSemaphore(ui->semC_1_3);
-    _c1_3->setArrivalSensorPlace(4);
+    _c1_3->setArrivalSensorPlace(0);
     connect(_c1_3, &Column::increaseTotalCars, this, &CrossroadTa::increaseConv);
 
     _c2_1 = new Column(this, 9, Direction::DOWN, 555, 55, 40, 15);
     _c2_1->attachSemaphore(ui->semC_2_1);
-    _c2_1->setArrivalSensorPlace(4);
+    _c2_1->setArrivalSensorPlace(0);
     connect(_c2_1, &Column::increaseTotalCars, this, &CrossroadTa::increaseConv);
 
     _c2_2 = new Column(this, 14, Direction::RIGHT, 880, 200, 15, 25);
     _c2_2->attachSemaphore(ui->semC_2_2);
-    _c2_2->setArrivalSensorPlace(4);
+    _c2_2->setArrivalSensorPlace(0);
     connect(_c2_2, &Column::increaseTotalCars, this, &CrossroadTa::increaseConv);
 
     _c3_1 = new Column(this, 14, Direction::RIGHT, 880, 235, 15, 25);
     _c3_1->attachSemaphore(ui->semC_3_1);
-    _c3_1->setArrivalSensorPlace(4);
+    _c3_1->setArrivalSensorPlace(0);
     connect(_c3_1, &Column::increaseTotalCars, this, &CrossroadTa::increaseConv);
+
 }
 
 void CrossroadTa::setupTimeout()
@@ -152,14 +153,15 @@ void CrossroadTa::setupTimeout()
 
 void CrossroadTa::setupSemaphoreTimer()
 {
-    _semaphoreClockConv.setInterval(SEMAPHORE1);
+    _semaphoreClockConv.setInterval(SEMAPHORE1_TA);
     connect(&_semaphoreClockConv, &QTimer::timeout, this, &CrossroadTa::convTimeout);
 
-    _semaphoreClockSmart.setInterval(SEMAPHORE1);
+    _semaphoreClockSmart.setInterval(SEMAPHORE1_TA);
     connect(&_semaphoreClockSmart, &QTimer::timeout, this, &CrossroadTa::smartTimeout);
 
     _semaphoreClockConv.start();
     _semaphoreClockSmart.start();
+
 }
 
 void CrossroadTa::convTimeout()
@@ -175,25 +177,25 @@ void CrossroadTa::convTimeout()
         ui->semC_1_1->changeState();
         ui->semC_1_2->changeState();
         ui->semC_1_3->changeState();
-        convIt = 2;
         ui->semC_2_1->changeState();
         ui->semC_2_2->changeState();
-        _semaphoreClockConv.setInterval(SEMAPHORE2);
+        _semaphoreClockConv.setInterval(SEMAPHORE2_TA);
+        convIt = 2;
     }
     else if(convIt == 2) {
         ui->semC_2_1->changeState();
         ui->semC_2_2->changeState();
-        convIt = 3;
         ui->semC_3_1->changeState();
-        _semaphoreClockConv.setInterval(SEMAPHORE3);
+        _semaphoreClockConv.setInterval(SEMAPHORE3_TA);
+        convIt = 3;
     }
     else if(convIt == 3) {
         ui->semC_3_1->changeState();
-        convIt = 1;
         ui->semC_1_1->changeState();
         ui->semC_1_2->changeState();
         ui->semC_1_3->changeState();
-        _semaphoreClockConv.setInterval(SEMAPHORE1);
+        _semaphoreClockConv.setInterval(SEMAPHORE1_TA);
+        convIt = 1;
     }
     _semaphoreClockConv.start();
 }
@@ -213,6 +215,7 @@ void CrossroadTa::smartTimeout()
             float ext2 = fuzzyBrain(_s1_2->queueLength(), _s1_2->arrivalRate());
             float ext3 = fuzzyBrain(_s1_3->queueLength(), _s1_3->arrivalRate());
             int extension = qCeil(double(ext1 + ext2 + ext3)/3);
+            qDebug() << "Extension 1 : " << QString::number(double(extension));
             _semaphoreClockSmart.setInterval(extension);
             previouslyExtended = true;
         }
@@ -223,7 +226,7 @@ void CrossroadTa::smartTimeout()
             smartIt = 2;
             ui->semS_2_1->changeState();
             ui->semS_2_2->changeState();
-            _semaphoreClockSmart.setInterval(SEMAPHORE2);
+            _semaphoreClockSmart.setInterval(SEMAPHORE2_TA);
             previouslyExtended = false;
         }
     }
@@ -233,6 +236,7 @@ void CrossroadTa::smartTimeout()
             float ext1 = fuzzyBrain(_s2_1->queueLength(), _s2_1->arrivalRate());
             float ext2 = fuzzyBrain(_s2_2->queueLength(), _s2_2->arrivalRate());
             int extension = qCeil(double(ext1 + ext2)/2);
+            qDebug() << "Extension 2 : " << QString::number(double(extension));
             _semaphoreClockSmart.setInterval(extension);
             previouslyExtended = true;
         }
@@ -241,7 +245,7 @@ void CrossroadTa::smartTimeout()
             ui->semS_2_2->changeState();
             smartIt = 3;
             ui->semS_3_1->changeState();
-            _semaphoreClockSmart.setInterval(SEMAPHORE3);
+            _semaphoreClockSmart.setInterval(SEMAPHORE3_TA);
             previouslyExtended = false;
         }
     }
@@ -251,6 +255,7 @@ void CrossroadTa::smartTimeout()
             float ext1 = fuzzyBrain(_s3_1->queueLength(), _s3_1->arrivalRate());
             int extension = qCeil(double(ext1));
             _semaphoreClockSmart.setInterval(extension);
+            qDebug() << "Extension 3 : " << QString::number(double(extension));
             previouslyExtended = true;
         }
         else {
@@ -259,7 +264,7 @@ void CrossroadTa::smartTimeout()
             ui->semS_1_1->changeState();
             ui->semS_1_2->changeState();
             ui->semS_1_3->changeState();
-            _semaphoreClockSmart.setInterval(SEMAPHORE1);
+            _semaphoreClockSmart.setInterval(SEMAPHORE1_TA);
             previouslyExtended = false;
         }
     }
@@ -274,52 +279,62 @@ void CrossroadTa::on_startSimulation_clicked()
 
 void CrossroadTa::on_buttonC1_clicked()
 {
+    if(_s1_1->columnFull() || _c1_1->columnFull())
+        return;
     _s1_1->scheduleCar();
     _c1_1->scheduleCar();
 }
 
 void CrossroadTa::on_buttonC3_clicked()
 {
-    _s1_2->scheduleCar();
-    _c1_2->scheduleCar();
+    if(!(_s1_2->columnFull() || _c1_2->columnFull())) {
+        _s1_2->scheduleCar();
+        _c1_2->scheduleCar();
+    }
 }
 
 void CrossroadTa::on_buttonC4_clicked()
 {
-    _s1_3->scheduleCar();
-    _c1_3->scheduleCar();
+    if(!(_s1_3->columnFull() || _c1_3->columnFull())) {
+        _s1_3->scheduleCar();
+        _c1_3->scheduleCar();
+    }
 }
 
 void CrossroadTa::on_buttonC2_clicked()
 {
-    _s2_1->scheduleCar();
-    _c2_1->scheduleCar();
+    if(!(_s2_1->columnFull() || _c2_1->columnFull())) {
+        _s2_1->scheduleCar();
+        _c2_1->scheduleCar();
+    }
 }
 
 void CrossroadTa::on_buttonC5_clicked()
 {
-    _s2_2->scheduleCar();
-    _c2_2->scheduleCar();
+    if(!(_s2_2->columnFull() || _c2_2->columnFull())) {
+        _s2_2->scheduleCar();
+        _c2_2->scheduleCar();
+    }
 }
 
 void CrossroadTa::on_buttonC6_clicked()
 {
-    _s3_1->scheduleCar();
-    _c3_1->scheduleCar();
+    if(!(_s3_1->columnFull() || _c3_1->columnFull())) {
+        _s3_1->scheduleCar();
+        _c3_1->scheduleCar();
+    }
 }
 
 float CrossroadTa::fuzzyBrain(int queueLength, int arrivalRate)
 {
-    // FOR NOW JUST COPY THIS METHOD EVERYWHERE, SETUP FUZZY SYSTEM LATER !!!!
-
     _controller1 = new FuzzyController();
 
     _controller1->addInput(new FuzzyInput("Queue"));
-    _controller1->is("Queue")->appendVariable(new FuzzyInputVariable("vshort", QVector<float>{0,2}, QVector<float>{1,0}, queueLength));
-    _controller1->is("Queue")->appendVariable(new FuzzyInputVariable("short", QVector<float>{1,2,4,5}, QVector<float>{0,1,1,0}, queueLength));
-    _controller1->is("Queue")->appendVariable(new FuzzyInputVariable("middle", QVector<float>{4,6,8}, QVector<float>{0,1,0}, queueLength));
-    _controller1->is("Queue")->appendVariable(new FuzzyInputVariable("long", QVector<float>{7,8,10,11}, QVector<float>{0,1,1,0}, queueLength));
-    _controller1->is("Queue")->appendVariable(new FuzzyInputVariable("vlong", QVector<float>{10,12}, QVector<float>{0,1}, queueLength));
+    _controller1->is("Queue")->appendVariable(new FuzzyInputVariable("vshort", QVector<float>{1,2}, QVector<float>{1,0}, queueLength));
+    _controller1->is("Queue")->appendVariable(new FuzzyInputVariable("short", QVector<float>{1,2,3,4}, QVector<float>{0,1,1,0}, queueLength));
+    _controller1->is("Queue")->appendVariable(new FuzzyInputVariable("middle", QVector<float>{2,4,5,7}, QVector<float>{0,1,1,0}, queueLength));
+    _controller1->is("Queue")->appendVariable(new FuzzyInputVariable("long", QVector<float>{5,6,7,8}, QVector<float>{0,1,1,0}, queueLength));
+    _controller1->is("Queue")->appendVariable(new FuzzyInputVariable("vlong", QVector<float>{7,8}, QVector<float>{0,1}, queueLength));
 
     _controller1->addInput(new FuzzyInput("Arrival"));
     _controller1->is("Arrival")->appendVariable(new FuzzyInputVariable("small", QVector<float>{0,2}, QVector<float>{1,0}, arrivalRate));
@@ -351,7 +366,23 @@ float CrossroadTa::fuzzyBrain(int queueLength, int arrivalRate)
 
     float result = qCeil(double(_controller1->solve()));
 
-    //qDebug() << "fuzzybrain:" << QString::number(result);
+    result < 0 ? result = 0 : result;
 
-    return result * MULTIPLIER;
+    return result * MULTIPLIER_TA;
+}
+
+void CrossroadTa::keyPressEvent(QKeyEvent *event)
+{
+    if(event->key() == Qt::Key_A)
+        ui->buttonC1->click();
+    if(event->key() == Qt::Key_S)
+        ui->buttonC2->click();
+    if(event->key() == Qt::Key_D)
+        ui->buttonC3->click();
+    if(event->key() == Qt::Key_F)
+        ui->buttonC4->click();
+    if(event->key() == Qt::Key_I)
+        ui->buttonC5->click();
+    if(event->key() == Qt::Key_K)
+        ui->buttonC6->click();
 }

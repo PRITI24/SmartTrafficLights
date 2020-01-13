@@ -20,7 +20,7 @@ CrossroadI::CrossroadI(QWidget *parent) :
     //
 
     // Add car for _Scolumn1 button
-    addSColumn1Button = new QPushButton("Add", this);
+    addSColumn1Button = new QPushButton("Add - A", this);
     addSColumn1Button->setGeometry(85,40,90,20);
     connect(addSColumn1Button, &QPushButton::clicked, this, &CrossroadI::scheduledCarForSColumn1);
     connect(addSColumn1Button, &QPushButton::clicked, this, &CrossroadI::scheduledCarForCColumn1);
@@ -28,7 +28,7 @@ CrossroadI::CrossroadI(QWidget *parent) :
     //
 
     // Add car for _Scolumn2 button
-    addSColumn2Button = new QPushButton("Add", this);
+    addSColumn2Button = new QPushButton("Add - D", this);
     addSColumn2Button->setGeometry(210,600,90,20);
     connect(addSColumn2Button, &QPushButton::clicked, this, &CrossroadI::scheduledCarForSColumn2);
     connect(addSColumn2Button, &QPushButton::clicked, this, &CrossroadI::scheduledCarForCColumn2);
@@ -172,7 +172,7 @@ void CrossroadI::setupSemaphoreTimers()
     _s1Timer.start();
 }
 
-float CrossroadI::fuzzyBrain(int queueLength, int arrivalRate)
+int CrossroadI::fuzzyBrain(int queueLength, int arrivalRate)
 {
     _controller1 = new FuzzyController();
 
@@ -181,7 +181,7 @@ float CrossroadI::fuzzyBrain(int queueLength, int arrivalRate)
     _controller1->is("Queue")->appendVariable(new FuzzyInputVariable("short", QVector<float>{1,2,4,5}, QVector<float>{0,1,1,0}, queueLength));
     _controller1->is("Queue")->appendVariable(new FuzzyInputVariable("middle", QVector<float>{4,6,8}, QVector<float>{0,1,0}, queueLength));
     _controller1->is("Queue")->appendVariable(new FuzzyInputVariable("long", QVector<float>{7,8,10,11}, QVector<float>{0,1,1,0}, queueLength));
-    _controller1->is("Queue")->appendVariable(new FuzzyInputVariable("vlong", QVector<float>{10,12}, QVector<float>{0,1}, queueLength));
+    _controller1->is("Queue")->appendVariable(new FuzzyInputVariable("vlong", QVector<float>{10,13}, QVector<float>{0,1}, queueLength));
 
     _controller1->addInput(new FuzzyInput("Arrival"));
     _controller1->is("Arrival")->appendVariable(new FuzzyInputVariable("small", QVector<float>{0,2}, QVector<float>{1,0}, arrivalRate));
@@ -211,9 +211,15 @@ float CrossroadI::fuzzyBrain(int queueLength, int arrivalRate)
 
     _controller1->addRule(_controller1->is("Extension",0)->is("vsmall"), _controller1->is("Queue")->is("vshort"));
 
-    float result = qCeil(double(_controller1->solve()));
-
-    //qDebug() << "fuzzybrain:" << QString::number(result);
+    int result = qCeil(double(_controller1->solve()));
 
     return result * MULTIPLIER;
+}
+
+void CrossroadI::keyPressEvent(QKeyEvent *event)
+{
+    if(event->key() == Qt::Key_A)
+        addSColumn1Button->click();
+    if(event->key() == Qt::Key_D)
+        addSColumn2Button->click();
 }

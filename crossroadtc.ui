@@ -637,14 +637,14 @@
   <widget class="QPushButton" name="buttonC1">
    <property name="geometry">
     <rect>
-     <x>57</x>
+     <x>76</x>
      <y>33</y>
      <width>21</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>*</string>
+    <string>A</string>
    </property>
   </widget>
   <widget class="Line" name="separationLine_7">
@@ -670,7 +670,7 @@
    <property name="geometry">
     <rect>
      <x>795</x>
-     <y>50</y>
+     <y>46</y>
      <width>51</width>
      <height>24</height>
     </rect>
@@ -804,7 +804,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>*</string>
+    <string>S</string>
    </property>
   </widget>
   <widget class="Line" name="separationLine_18">
@@ -829,7 +829,7 @@
   <widget class="QPushButton" name="startSimulation">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>8</x>
      <y>5</y>
      <width>101</width>
      <height>24</height>
@@ -1297,7 +1297,7 @@
    <property name="geometry">
     <rect>
      <x>335</x>
-     <y>50</y>
+     <y>46</y>
      <width>51</width>
      <height>24</height>
     </rect>
@@ -1389,7 +1389,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>*</string>
+    <string>D</string>
    </property>
   </widget>
   <widget class="Line" name="separationLine_15">

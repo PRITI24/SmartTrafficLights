@@ -58,5 +58,9 @@ float FuzzyController::solve()
         up += (*it)->mi() * (*it)->c();
         down += (*it)->mi();
    }
+   if (abs(double(down)) < 0.0001) {
+       qDebug() << "FuzzyController::solve() ERROR -->" << " UP:" << QString::number(double(up)) << " DOWN: " << QString::number(double(down));
+   }
+
    return up / down;
 }

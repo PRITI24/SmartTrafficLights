@@ -103,3 +103,11 @@ void Column::setArrivalSensorPlace(int place)
     if(place < m_columnSize)
         m_arrivalSensorPlace = place;
 }
+
+bool Column::columnFull()
+{
+    for(int i = 0; i < m_columnSize; i++)
+        if (!m_column[i]->type())
+            return false;
+    return true;
+}

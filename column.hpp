@@ -22,6 +22,7 @@ public:
     void scheduleCar();
     void attachSemaphore(Semaphore *semaphore);
     void setArrivalSensorPlace(int place);
+    bool columnFull();
 
 public slots:
     void columnTimeout();
