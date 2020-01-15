@@ -32,7 +32,8 @@ SOURCES += \
     qlabelclickable.cpp \
     semaphore.cpp \
     crossroadtc.cpp \
-    crossroadxa.cpp
+    crossroadxa.cpp \
+    crossroadxb.cpp
 
 HEADERS += \
     column.hpp \
@@ -51,7 +52,8 @@ HEADERS += \
     semaphore.hpp \
     tests.hpp \
     crossroadtc.hpp \
-    crossroadxa.hpp
+    crossroadxa.hpp \
+    crossroadxb.hpp
 
 FORMS += \
     crossroadi.ui \
@@ -59,7 +61,8 @@ FORMS += \
     crossroadtb.ui \
     mainwindow.ui \
     crossroadtc.ui \
-    crossroadxa.ui
+    crossroadxa.ui \
+    crossroadxb.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

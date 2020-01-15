@@ -7,6 +7,7 @@
 #include <crossroadtb.hpp>
 #include <crossroadtc.hpp>
 #include <crossroadxa.hpp>
+#include <crossroadxb.hpp>
 
 #include <QMainWindow>
 
@@ -38,5 +39,6 @@ private:
     CrossroadTb *m_tb = nullptr;
     CrossroadTc *m_tc = nullptr;
     CrossroadXa *m_xa = nullptr;
+    CrossroadXb *m_xb = nullptr;
 };
 #endif // MAINWINDOW_HPP
