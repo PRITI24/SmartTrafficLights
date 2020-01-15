@@ -14,7 +14,7 @@ CrossroadI::CrossroadI(QWidget *parent) :
 
     // Start simulation button
     startSimButton = new QPushButton("Start simulator", this);
-    startSimButton->setGeometry(10,10,95,20);
+    startSimButton->setGeometry(10,10,105,20);
     connect(startSimButton, &QPushButton::clicked, this, &CrossroadI::onstartSimButtonClicked);
     startSimButton->show();
     //

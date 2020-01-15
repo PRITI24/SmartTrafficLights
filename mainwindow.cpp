@@ -54,7 +54,10 @@ void MainWindow::crossroadTc()
 
 void MainWindow::crossroadXa()
 {
-    qDebug() << " crossroadXa ";
+    m_xa = new CrossroadXa;
+    m_xa->setAttribute(Qt::WA_DeleteOnClose);
+    m_xa->show();
+    this->close();
 }
 
 void MainWindow::crossroadXb()

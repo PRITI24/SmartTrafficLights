@@ -610,9 +610,9 @@
   <widget class="QLabel" name="conventionalSemaphoreLabel">
    <property name="geometry">
     <rect>
-     <x>580</x>
+     <x>420</x>
      <y>0</y>
-     <width>211</width>
+     <width>181</width>
      <height>31</height>
     </rect>
    </property>
@@ -623,15 +623,15 @@
     </font>
    </property>
    <property name="text">
-    <string>Conventional semaphore system</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Conventional semaphore&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QLabel" name="smartSemaphoreLabel">
    <property name="geometry">
     <rect>
-     <x>220</x>
+     <x>275</x>
      <y>0</y>
-     <width>161</width>
+     <width>131</width>
      <height>31</height>
     </rect>
    </property>
@@ -642,7 +642,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Smart semaphore system</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Smart semaphore&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="Semaphore" name="_Ssemaphore1">
@@ -712,9 +712,9 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>220</x>
+     <x>230</x>
      <y>30</y>
-     <width>71</width>
+     <width>41</width>
      <height>20</height>
     </rect>
    </property>
@@ -726,15 +726,15 @@
     </font>
    </property>
    <property name="text">
-    <string>Total cars:</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Cars:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>580</x>
+     <x>600</x>
      <y>30</y>
-     <width>71</width>
+     <width>41</width>
      <height>20</height>
     </rect>
    </property>
@@ -746,7 +746,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Total cars:</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Cars:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="totalCarsSmart">
