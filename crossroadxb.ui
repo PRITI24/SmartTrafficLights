@@ -98,7 +98,7 @@
     <string>S</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="buttonC7">
+  <widget class="QPushButton" name="buttonC6">
    <property name="geometry">
     <rect>
      <x>4</x>
@@ -162,7 +162,7 @@
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QPushButton" name="buttonC4">
+  <widget class="QPushButton" name="buttonC3">
    <property name="geometry">
     <rect>
      <x>534</x>
@@ -264,7 +264,7 @@
     <enum>Qt::Vertical</enum>
    </property>
   </widget>
-  <widget class="Semaphore" name="semS_3_2">
+  <widget class="Semaphore" name="semS_2_2">
    <property name="geometry">
     <rect>
      <x>254</x>
@@ -325,7 +325,7 @@
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="Semaphore" name="semC_3_1">
+  <widget class="Semaphore" name="semC_2_1">
    <property name="geometry">
     <rect>
      <x>864</x>
@@ -382,7 +382,7 @@
     <enum>Qt::Vertical</enum>
    </property>
   </widget>
-  <widget class="QPushButton" name="buttonC6">
+  <widget class="QPushButton" name="buttonC5">
    <property name="geometry">
     <rect>
      <x>294</x>
@@ -503,7 +503,7 @@
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="Semaphore" name="semS_2_2">
+  <widget class="Semaphore" name="semS_3_1">
    <property name="geometry">
     <rect>
      <x>144</x>
@@ -656,7 +656,7 @@
     <enum>Qt::Vertical</enum>
    </property>
   </widget>
-  <widget class="Semaphore" name="semC_2_2">
+  <widget class="Semaphore" name="semC_3_1">
    <property name="geometry">
     <rect>
      <x>724</x>
@@ -726,7 +726,7 @@
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="Semaphore" name="semC_3_2">
+  <widget class="Semaphore" name="semC_2_2">
    <property name="geometry">
     <rect>
      <x>834</x>
@@ -742,7 +742,7 @@
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="QPushButton" name="buttonC5">
+  <widget class="QPushButton" name="buttonC4">
    <property name="geometry">
     <rect>
      <x>344</x>
@@ -885,7 +885,7 @@
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="Semaphore" name="semS_3_1">
+  <widget class="Semaphore" name="semS_2_1">
    <property name="geometry">
     <rect>
      <x>284</x>

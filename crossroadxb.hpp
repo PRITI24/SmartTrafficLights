@@ -35,10 +35,10 @@ private slots:
     void on_startSimulation_clicked();
     void on_buttonC1_clicked();
     void on_buttonC2_clicked();
+    void on_buttonC3_clicked();
     void on_buttonC4_clicked();
     void on_buttonC5_clicked();
     void on_buttonC6_clicked();
-    void on_buttonC7_clicked();
     void convTimeout();
     void smartTimeout();
 
@@ -58,16 +58,16 @@ private:
     // Columns
     Column* _s1_1;
     Column* _s1_2;
+    Column* _s2_1;
     Column* _s2_2;
     Column* _s3_1;
-    Column* _s3_2;
     Column* _s4_1;
 
     Column* _c1_1;
     Column* _c1_2;
+    Column* _c2_1;
     Column* _c2_2;
     Column* _c3_1;
-    Column* _c3_2;
     Column* _c4_1;
 
     // Car counter
