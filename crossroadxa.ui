@@ -560,6 +560,9 @@
    <property name="frame">
     <bool>true</bool>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
@@ -582,6 +585,9 @@
      <width>51</width>
      <height>24</height>
     </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="Line" name="separationLine_25">

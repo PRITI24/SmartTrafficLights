@@ -308,6 +308,9 @@
      <height>24</height>
     </rect>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="Semaphore" name="semC_1_2">
    <property name="geometry">
@@ -481,6 +484,9 @@
     </rect>
    </property>
    <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="readOnly">
     <bool>true</bool>
    </property>
   </widget>

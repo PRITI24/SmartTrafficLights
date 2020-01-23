@@ -12,10 +12,6 @@ CrossroadXb::CrossroadXb(QWidget *parent) :
     setupTimeout();
     setupSemaphoreTimer();
 
-    // disable line edit so user can not insert text
-    ui->totalCarsConv->setDisabled(true);
-    ui->totalCarsSmart->setDisabled(true);
-
     ui->startSimulation->raise();
     ui->buttonC1->raise();
     ui->buttonC2->raise();
@@ -276,32 +272,32 @@ void CrossroadXb::setupColumns()
     _c1_1 = new Column(this, 9, Direction::DOWN, 765, 15, 40, 15);
     _c1_1->attachSemaphore(ui->semC_1_1);
     _c1_1->setArrivalSensorPlace(0);
-    connect(_c1_1, &Column::increaseTotalCars, this, &CrossroadXb::increaseSmart);
+    connect(_c1_1, &Column::increaseTotalCars, this, &CrossroadXb::increaseConv);
 
     _c1_2 = new Column(this, 9, Direction::UP, 910, 490, 40, 15);
     _c1_2->attachSemaphore(ui->semC_1_2);
     _c1_2->setArrivalSensorPlace(0);
-    connect(_c1_2, &Column::increaseTotalCars, this, &CrossroadXb::increaseSmart);
+    connect(_c1_2, &Column::increaseTotalCars, this, &CrossroadXb::increaseConv);
 
     _c2_1 = new Column(this, 9, Direction::DOWN, 810, 15, 40, 15);
     _c2_1->attachSemaphore(ui->semC_2_1);
     _c2_1->setArrivalSensorPlace(0);
-    connect(_c2_1, &Column::increaseTotalCars, this, &CrossroadXb::increaseSmart);
+    connect(_c2_1, &Column::increaseTotalCars, this, &CrossroadXb::increaseConv);
 
     _c2_2 = new Column(this, 9, Direction::UP, 865, 490, 40, 15);
     _c2_2->attachSemaphore(ui->semC_2_2);
     _c2_2->setArrivalSensorPlace(0);
-    connect(_c2_2, &Column::increaseTotalCars, this, &CrossroadXb::increaseSmart);
+    connect(_c2_2, &Column::increaseTotalCars, this, &CrossroadXb::increaseConv);
 
     _c3_1 = new Column(this, 9, Direction::LEFT, 616, 300, 15, 40);
     _c3_1->attachSemaphore(ui->semC_3_1);
     _c3_1->setArrivalSensorPlace(0);
-    connect(_c3_1, &Column::increaseTotalCars, this, &CrossroadXb::increaseSmart);
+    connect(_c3_1, &Column::increaseTotalCars, this, &CrossroadXb::increaseConv);
 
     _c4_1 = new Column(this, 9, Direction::RIGHT, 1106, 200, 15, 40);
     _c4_1->attachSemaphore(ui->semC_4_1);
     _c4_1->setArrivalSensorPlace(0);
-    connect(_c4_1, &Column::increaseTotalCars, this, &CrossroadXb::increaseSmart);
+    connect(_c4_1, &Column::increaseTotalCars, this, &CrossroadXb::increaseConv);
 }
 
 void CrossroadXb::setupTimeout()
