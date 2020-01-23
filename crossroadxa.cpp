@@ -379,6 +379,14 @@ void CrossroadXa::setupTimeout()
     connect(&_timeoutClock, &QTimer::timeout, _c4_1, &Column::columnTimeout);
     connect(&_timeoutClock, &QTimer::timeout, _c4_2, &Column::columnTimeout);
 
+    connect(&_timeoutClock, &QTimer::timeout, this, &CrossroadXa::updateLogger);
+
+}
+
+void CrossroadXa::updateLogger()
+{
+    smartLogger.push_back(_smartTotal);
+    convientLogger.push_back(_convTotal);
 }
 
 void CrossroadXa::setupSemaphoreTimer()
@@ -458,5 +466,13 @@ void CrossroadXa::keyPressEvent(QKeyEvent *event)
         ui->buttonC7->click();
     if(event->key() == Qt::Key_U)
         ui->buttonC8->click();
+
+    if(event->key() == Qt::Key_Z) {
+        _timeoutClock.stop();
+        dataLogger = new DataLogger(nullptr, smartLogger, convientLogger);
+        dataLogger->setAttribute(Qt::WA_DeleteOnClose);
+        dataLogger->show();
+        this->close();
+    }
 
 }

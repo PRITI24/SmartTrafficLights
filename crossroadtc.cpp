@@ -101,7 +101,9 @@ void CrossroadTc::setupTimeout()
     connect(&_timeoutClock, &QTimer::timeout, _c1_1, &Column::columnTimeout);
     connect(&_timeoutClock, &QTimer::timeout, _c2_1, &Column::columnTimeout);
     connect(&_timeoutClock, &QTimer::timeout, _c3_1, &Column::columnTimeout);
-}
+
+    connect(&_timeoutClock, &QTimer::timeout, this, &CrossroadTc::updateLogger);
+    }
 
 void CrossroadTc::setupSemaphoreTimer()
 {
@@ -113,6 +115,12 @@ void CrossroadTc::setupSemaphoreTimer()
 
     _semaphoreClockConv.start();
     _semaphoreClockSmart.start();
+}
+
+void CrossroadTc::updateLogger()
+{
+    smartLogger.push_back(_smartTotal);
+    convientLogger.push_back(_convTotal);
 }
 
 void CrossroadTc::convTimeout()
@@ -285,4 +293,12 @@ void CrossroadTc::keyPressEvent(QKeyEvent *event)
         ui->buttonC2->click();
     if(event->key() == Qt::Key_D)
         ui->buttonC3->click();
+
+    if(event->key() == Qt::Key_Z) {
+        _timeoutClock.stop();
+        dataLogger = new DataLogger(nullptr, smartLogger, convientLogger);
+        dataLogger->setAttribute(Qt::WA_DeleteOnClose);
+        dataLogger->show();
+        this->close();
+    }
 }

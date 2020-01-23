@@ -1,8 +1,8 @@
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
-CONFIG += c++11
+CONFIG += c++14
 
 # The following define makes your compiler emit warnings if you use
 # any Qt feature that has been marked deprecated (the exact warnings
@@ -19,6 +19,7 @@ SOURCES += \
     crossroadi.cpp \
     crossroadta.cpp \
     crossroadtb.cpp \
+    datalogger.cpp \
     fuzzycontroller.cpp \
     fuzzyinput.cpp \
     fuzzyinputvariable.cpp \
@@ -29,6 +30,7 @@ SOURCES += \
     mainwindow.cpp \
     placeholder.cpp \
     column.cpp \
+    qcustomplot.cpp \
     qlabelclickable.cpp \
     semaphore.cpp \
     crossroadtc.cpp \
@@ -40,6 +42,7 @@ HEADERS += \
     crossroadi.hpp \
     crossroadta.hpp \
     crossroadtb.hpp \
+    datalogger.hpp \
     fuzzycontroller.hpp \
     fuzzyinput.hpp \
     fuzzyinputvariable.hpp \
@@ -48,6 +51,7 @@ HEADERS += \
     fuzzyrule.hpp \
     mainwindow.hpp \
     placeholder.hpp \
+    qcustomplot.hpp \
     qlabelclickable.hpp \
     semaphore.hpp \
     tests.hpp \
@@ -59,6 +63,7 @@ FORMS += \
     crossroadi.ui \
     crossroadta.ui \
     crossroadtb.ui \
+    datalogger.ui \
     mainwindow.ui \
     crossroadtc.ui \
     crossroadxa.ui \

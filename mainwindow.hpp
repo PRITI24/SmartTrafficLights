@@ -8,8 +8,10 @@
 #include <crossroadtc.hpp>
 #include <crossroadxa.hpp>
 #include <crossroadxb.hpp>
+#include <datalogger.hpp>
 
 #include <QMainWindow>
+#include <QVector>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -33,6 +35,8 @@ public slots:
 
 private:
     Ui::MainWindow *ui;
+
+    DataLogger *log = nullptr;
 
     CrossroadI *m_i = nullptr;
     CrossroadTa *m_ta = nullptr;

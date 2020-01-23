@@ -14,6 +14,7 @@
 #include <QtMath>
 #include "column.hpp"
 #include "fuzzycontroller.hpp"
+#include "datalogger.hpp"
 
 namespace Ui {
 class CrossroadTc;
@@ -43,6 +44,7 @@ private:
     void setupColumns();
     void setupTimeout();
     void setupSemaphoreTimer();
+    void updateLogger();
     float fuzzyBrain(int queueLength, int arrivalRate);
 
 protected:
@@ -74,6 +76,11 @@ private:
     int smartIt = 1;
     bool previouslyExtended = false;
     FuzzyController *_controller1;
+
+    // Data logger
+    DataLogger *dataLogger;
+    QVector<int> smartLogger;
+    QVector<int> convientLogger;
 
 };
 
