@@ -63,6 +63,16 @@ void DataLogger::updateConvient(int value)
     _smartCars.push_back(double(value));
 }
 
+void DataLogger::setTimeSpent(int smart, int conv)
+{
+    timeSmart = smart;
+    timeConv = conv;
+
+
+    ui->timeSpentInSmart->setText( QString::number(timeSmart));
+    ui->timeSpentInConvient->setText( QString::number(timeConv));
+}
+
 void DataLogger::prepareGraphs()
 {
     int n = _convientCars.size();

@@ -156,6 +156,20 @@
           </property>
          </widget>
         </item>
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Time cars spent in Smart crossroad:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Time cars spent in Convient crossroad:</string>
+          </property>
+         </widget>
+        </item>
        </layout>
       </item>
       <item>
@@ -217,6 +231,32 @@
         </item>
         <item>
          <widget class="QLineEdit" name="lMaxDifferenceConv">
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="timeSpentInSmart">
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="timeSpentInConvient">
           <property name="maximumSize">
            <size>
             <width>50</width>

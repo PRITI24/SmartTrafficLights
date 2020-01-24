@@ -21,6 +21,7 @@ public:
     ~DataLogger();
     void updateSmart(int value);
     void updateConvient(int value);
+    void setTimeSpent(int smart, int conv);
     void prepareGraphs();
     void printVectors();
 
@@ -31,6 +32,8 @@ private:
     QVector<double> _differences;
     double _diffMax = -99999;
     double _diffMin = +99999;
+    int timeSmart = 0;
+    int timeConv = 0;
 };
 
 #endif // DATALOGGER_HPP

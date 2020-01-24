@@ -93,6 +93,11 @@ int Column::queueLength()
 
 }
 
+int Column::totalCarsInColumn()
+{
+    return std::count_if(m_column.begin(), m_column.end(), [] (Placeholder *it) {if (it->type()) return true; return false ;});
+}
+
 void Column::attachSemaphore(Semaphore *semaphore)
 {
     m_attachedSemaphore = semaphore;

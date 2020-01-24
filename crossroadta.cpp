@@ -171,6 +171,21 @@ void CrossroadTa::updateLogger()
 {
     smartLogger.push_back(_smartTotal);
     convientLogger.push_back(_convTotal);
+
+    spentTimeSmartLogger += _s1_1->totalCarsInColumn();
+    spentTimeSmartLogger += _s1_2->totalCarsInColumn();
+    spentTimeSmartLogger += _s1_3->totalCarsInColumn();
+    spentTimeSmartLogger += _s2_1->totalCarsInColumn();
+    spentTimeSmartLogger += _s2_2->totalCarsInColumn();
+    spentTimeSmartLogger += _s3_1->totalCarsInColumn();
+
+    spentTimeConvLogger += _c1_1->totalCarsInColumn();
+    spentTimeConvLogger += _c1_2->totalCarsInColumn();
+    spentTimeConvLogger += _c1_3->totalCarsInColumn();
+    spentTimeConvLogger += _c2_1->totalCarsInColumn();
+    spentTimeConvLogger += _c2_2->totalCarsInColumn();
+    spentTimeConvLogger += _c3_1->totalCarsInColumn();
+
 }
 
 void CrossroadTa::convTimeout()
@@ -404,6 +419,7 @@ void CrossroadTa::keyPressEvent(QKeyEvent *event)
     }if(event->key() == Qt::Key_Z) {
         _timeoutClock.stop();
         dataLogger = new DataLogger(nullptr, smartLogger, convientLogger);
+        dataLogger->setTimeSpent(spentTimeSmartLogger, spentTimeConvLogger);
         dataLogger->setAttribute(Qt::WA_DeleteOnClose);
         dataLogger->show();
         this->close();

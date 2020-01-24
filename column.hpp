@@ -2,6 +2,7 @@
 #define COLUMN_H
 
 #include <QObject>
+#include <algorithm>
 #include <QVector>
 #include <QDebug>
 #include <placeholder.hpp>
@@ -28,6 +29,7 @@ public slots:
     void columnTimeout();
     int arrivalRate();
     int queueLength();
+    int totalCarsInColumn();
 
 signals:
     void increaseTotalCars();

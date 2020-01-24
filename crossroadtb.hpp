@@ -89,6 +89,8 @@ private:
     DataLogger *dataLogger;
     QVector<int> smartLogger;
     QVector<int> convientLogger;
+    int spentTimeSmartLogger = 0;
+    int spentTimeConvLogger = 0;
 
 };
 

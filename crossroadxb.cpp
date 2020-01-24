@@ -327,6 +327,21 @@ void CrossroadXb::updateLogger()
 {
     smartLogger.push_back(_smartTotal);
     convientLogger.push_back(_convTotal);
+
+    spentTimeSmartLogger += _s1_1->totalCarsInColumn();
+    spentTimeSmartLogger += _s1_2->totalCarsInColumn();
+    spentTimeSmartLogger += _s2_1->totalCarsInColumn();
+    spentTimeSmartLogger += _s2_2->totalCarsInColumn();
+    spentTimeSmartLogger += _s3_1->totalCarsInColumn();
+    spentTimeSmartLogger += _s4_1->totalCarsInColumn();
+
+    spentTimeConvLogger += _c1_1->totalCarsInColumn();
+    spentTimeConvLogger += _c1_2->totalCarsInColumn();
+    spentTimeConvLogger += _c2_1->totalCarsInColumn();
+    spentTimeConvLogger += _c2_2->totalCarsInColumn();
+    spentTimeConvLogger += _c3_1->totalCarsInColumn();
+    spentTimeConvLogger += _c4_1->totalCarsInColumn();
+
 }
 
 void CrossroadXb::setupSemaphoreTimer()
