@@ -36,3 +36,4 @@
 *.moc
 moc_*.cpp
 moc_*.h
+*build-*
