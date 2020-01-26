@@ -22,18 +22,18 @@ MainWindow::~MainWindow()
 
 void MainWindow::crossroadI()
 {
-    /*
+
     m_i = new CrossroadI;
     m_i->setAttribute(Qt::WA_DeleteOnClose);
     m_i->show();
     this->close();
-    */
 
-    log = new DataLogger(nullptr,   QVector<int> {0,0,0,0,0,0,0,0,1,2,4,5,6,7,9,10,11,13,15,17,18,20,22,22,24},
-                                    QVector<int> {0,0,0,0,0,0,0,0,1,2,3,5,6,8,9,10,11,12,12,16,17,19,20,22,24});
-    log->setAttribute(Qt::WA_DeleteOnClose);
-    log->show();
-    this->close();
+
+//    log = new DataLogger(nullptr,   QVector<int> {0,0,0,0,0,0,0,0,1,2,4,5,6,7,9,10,11,13,15,17,18,20,22,22,24},
+//                                    QVector<int> {0,0,0,0,0,0,0,0,1,2,3,5,6,8,9,10,11,12,12,16,17,19,20,22,24});
+//    log->setAttribute(Qt::WA_DeleteOnClose);
+//    log->show();
+//    this->close();
 }
 
 void MainWindow::crossroadTa()

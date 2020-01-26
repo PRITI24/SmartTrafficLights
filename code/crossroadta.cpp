@@ -413,12 +413,6 @@ void CrossroadTa::keyPressEvent(QKeyEvent *event)
     if(event->key() == Qt::Key_Z) {
         _timeoutClock.stop();
         dataLogger = new DataLogger(nullptr, smartLogger, convientLogger);
-        dataLogger->setAttribute(Qt::WA_DeleteOnClose);
-        dataLogger->show();
-        this->close();
-    }if(event->key() == Qt::Key_Z) {
-        _timeoutClock.stop();
-        dataLogger = new DataLogger(nullptr, smartLogger, convientLogger);
         dataLogger->setTimeSpent(spentTimeSmartLogger, spentTimeConvLogger);
         dataLogger->setAttribute(Qt::WA_DeleteOnClose);
         dataLogger->show();
